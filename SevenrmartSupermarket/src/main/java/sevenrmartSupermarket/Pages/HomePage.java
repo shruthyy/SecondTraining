@@ -18,11 +18,11 @@ package sevenrmartSupermarket.Pages;
 		@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteName;
 		@FindBy(xpath="//li[@class='nav-item']") WebElement menuList;
 		
-		public String verifySiteNameIsShownAtTop() {
+	public String verifySiteNameIsShownAtTop() {
 			WaitUtility.waitForElement(driver, siteName);
 			return PageUtility.getElementText(siteName);	
 		}
-		public boolean siteNameisDisplayed() {
+	public boolean siteNameisDisplayed() {
 			return PageUtility.isDisplay(siteName);
 		}
 		

@@ -2,18 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
+  <parameter name="offercode" value="TRYNEW20 "/>
   <listeners>
     <listener class-name="sevenrmartSupermarket.Testscripts.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest">
+      <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest">
         <methods>
+          <include name="verify_seraching_With_Offercode_Shows_Corressponding_Details" invocation-numbers="0 0 0"/>
           <include name="browserQuit"/>
           <include name="initilizeBrowser"/>
-          <include name="addNewLocationToManageLocation"/>
         </methods>
-      </class> <!-- sevenrmartSupermarket.Testscripts.ManageLocationTest -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageOfferCodeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

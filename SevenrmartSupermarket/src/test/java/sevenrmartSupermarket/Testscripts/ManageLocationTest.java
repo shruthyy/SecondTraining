@@ -20,7 +20,7 @@ public class ManageLocationTest extends Base{
 	LoginPage loginpage;
 	SelectCategoryPage selectcategorypage;
 	
-	@Test(retryAnalyzer =Retry.class)
+	@Test(priority=1 , retryAnalyzer =Retry.class)
 	public void addNewLocationToManageLocation() throws IOException {
 		String expectedData=ExcelUtility.getString(2,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -57,7 +57,7 @@ public class ManageLocationTest extends Base{
 		
 	}
 	
-	@Test(retryAnalyzer =Retry.class)
+	@Test(priority=3 , retryAnalyzer =Retry.class)
 	public void cancelInManageLocation() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -77,9 +77,9 @@ public class ManageLocationTest extends Base{
 		Select selectState=new Select(dropDownState);
 		selectState.selectByIndex(10);
 		managelocationpage.enterLocation(location).enterDeliveryCharge(deliverycharge).clickCancelButton();
-		assertTrue(managelocationpage.listPageShownAfterCancelling(),"Cancel button not working");
+		assertTrue(managelocationpage.listPageShownAfterCancelling(),"Cancell button not working");
 	}
-	@Test(retryAnalyzer =Retry.class)
+	@Test(priority=2 , retryAnalyzer =Retry.class)
 	public void resetInManageLocation() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

@@ -14,9 +14,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
-
 import Utilities.ScreenshotUtility;
 import Utilities.WaitUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;

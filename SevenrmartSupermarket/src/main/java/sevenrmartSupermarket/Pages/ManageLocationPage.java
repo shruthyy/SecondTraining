@@ -36,82 +36,70 @@ public class ManageLocationPage {
 	
  	By tableValue=By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
  	
-	    public ManageLocationPage clickNewButtonToAddLocation() {
+	public ManageLocationPage clickNewButtonToAddLocation() {
 	    	PageUtility.clickOnElement(newButtonLocationAdd);
-			return this;
-			
+			return this;		
 	    }
-		public ManageLocationPage enterLocation(String location) {
+	public ManageLocationPage enterLocation(String location) {
 		PageUtility.enterText(enterTheLocationTextBox, location);
-			
-			return this;
-			
+			return this;		
 		}
-		public ManageLocationPage enterDeliveryCharge(String deliverycharge) {
+	public ManageLocationPage enterDeliveryCharge(String deliverycharge) {
 			PageUtility.enterText(enterDeliveryChargeTextBox, deliverycharge);
 			return this;
 		}
-		
-		 public ManageLocationPage clickSaveButtonToAddLocation() {
+	public ManageLocationPage clickSaveButtonToAddLocation() {
 		    	PageUtility.clickOnElement(saveButtonToAddLocation);
 				return this;
 		    }
-		 public ManageLocationPage clickResetButton() {
+	 public ManageLocationPage clickResetButton() {
 			 PageUtility.clickOnElement(resetButton);
 			 return this;
 		 }
-
-		public boolean alertForAddingLocation() {
+	public boolean alertForAddingLocation() {
 			return PageUtility.isDisplay(alertWhenNewLocationAdded);
 		}
-		public ManageLocationPage clickCancelButton() {
+	public ManageLocationPage clickCancelButton() {
 			WaitUtility.waitForClickableByWebElement(driver, cancelButton);
 			PageUtility.clickOnElement(cancelButton);
 			return this;
 		}
-		public boolean listPageShownAfterCancelling() {
+	public boolean listPageShownAfterCancelling() {
 			return PageUtility.isDisplay(cancelBackPage);
 		}
-		public ManageLocationPage clickSearchButton() {
+	public ManageLocationPage clickSearchButton() {
 			WaitUtility.waitForClickableByWebElement(driver, searchButton);
 			PageUtility.clickOnElement(searchButton);
 			return this;
 		}
-		public ManageLocationPage clickRedSearchButton() {
+	public ManageLocationPage clickRedSearchButton() {
 		    WaitUtility.waitForClickableByWebElement(driver, redSearchButton);
 			PageUtility.clickOnElement(redSearchButton);
 			return this;
 		}
-
-		
-		  public boolean searchListLocationTable(String expectedData) throws IOException {
-			  int flag=0;
-			  String actualData="";
-		  List<WebElement>tablefull=driver.findElements(tableValue);
-		  for(WebElement value:tablefull) {
-			    actualData=value.getText();   
-			  if(actualData.equals(expectedData)) {
-				 flag=1;
-				  break;
-			  }
-			  
-		  }
-		  if(flag==1)
-		return true;
-		  else 
-			  return false;
-		
-		
-			   
-	  }
-		 
-		
-		public boolean pageShownAfterClickingResetIsDisplayed() {
+	public boolean pageShownAfterClickingResetIsDisplayed() {
 			return PageUtility.isDisplay(listPageAfterReset);
 		}
 			  
-		public void enterTheLocationToSearchInTable(String expectedData) {
+	public void enterTheLocationToSearchInTable(String expectedData) {
 			PageUtility.enterText(enterLocationToSearch, expectedData);
 		}
 
+	public boolean searchListLocationTable(String expectedData) throws IOException {
+			 int flag=0;
+			 String actualData="";
+		     List<WebElement>tablefull=driver.findElements(tableValue);
+		      for(WebElement value:tablefull) {
+			    actualData=value.getText();   
+			       if(actualData.equals(expectedData)) {
+				    flag=1;
+				    break;
+			  }
+			  
+		  }
+		  if(flag==1) 
+		       return true;	
+		  else 
+			  return false;  
+	  }
 }
