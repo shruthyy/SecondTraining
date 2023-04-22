@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest">
+      <class name="sevenrmartSupermarket.Testscripts.HomeTest">
         <methods>
           <include name="browserQuit"/>
+          <include name="verifyManageLocationOpensToCorrespondingUrl"/>
+          <include name="checkSiteNameIsDisplayedOnTop"/>
           <include name="initilizeBrowser"/>
-          <include name="verifyListSliderPageOpens"/>
-          <include name="addLinkToManageSlider"/>
         </methods>
-      </class> <!-- sevenrmartSupermarket.Testscripts.ManageSliderTest -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

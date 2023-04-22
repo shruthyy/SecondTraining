@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 17 14:14:45 GST 2023</td>
+<td>Started on:</td><td>Sat Apr 22 15:22:20 GST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15476 ms)</td>
+<tr><td>Total time:</td><td>114 seconds (114583 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sevenrmartSupermarket.Testscripts.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest<br>Parameters: admin, admin</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Cell.getStringCellValue()&quot; because &quot;c&quot; is null
-	at Utilities.ExcelUtility.getString(ExcelUtility.java:63)
-	at sevenrmartSupermarket.Testscripts.LoginTest.verifyLogin(LoginTest.java:25)
+<td title='sevenrmartSupermarket.Testscripts.ManageLocationTest.addNewLocationToManageLocation()'><b>addNewLocationToManageLocation</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageLocationTest</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=112.0.5615.121)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [921a8968285a2facb99151eeef29ed6c, get {url=searchpagelocation}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROJECTS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50359/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 921a8968285a2facb99151eeef29ed6c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:982)
+	at sevenrmartSupermarket.Testscripts.ManageLocationTest.addNewLocationToManageLocation(ManageLocationTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1228603887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1228603887'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Cell.getStringCellValue()&quot; because &quot;c&quot; is null
-	at Utilities.ExcelUtility.getString(ExcelUtility.java:63)
-	at sevenrmartSupermarket.Testscripts.LoginTest.verifyLogin(LoginTest.java:25)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574916376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1574916376'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=112.0.5615.121)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [921a8968285a2facb99151eeef29ed6c, get {url=searchpagelocation}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROJECTS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50359/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 921a8968285a2facb99151eeef29ed6c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:982)
+	at sevenrmartSupermarket.Testscripts.ManageLocationTest.addNewLocationToManageLocation(ManageLocationTest.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,8 +148,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>sevenrmartSupermarket.Testscripts.LoginTest@70f02c32</td></tr>
+<td>6</td>
+<td>sevenrmartSupermarket.Testscripts.ManageLocationTest@f31c0c6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -124,20 +159,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sevenrmartSupermarket.Testscripts.LoginTest.loginWithInvalidUserName()'><b>loginWithInvalidUserName</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest</td>
+<td title='sevenrmartSupermarket.Testscripts.ManageSliderTest.veriftClickingHomeButtonFromListSliderPage()'><b>veriftClickingHomeButtonFromListSliderPage</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageSliderTest</td>
 <td></td>
-<td>0</td>
-<td>sevenrmartSupermarket.Testscripts.LoginTest@70f02c32</td></tr>
+<td>5</td>
+<td>sevenrmartSupermarket.Testscripts.ManageSliderTest@4a9419d7</td></tr>
 <tr>
 <td title='sevenrmartSupermarket.Testscripts.LoginTest.verifyLogout()'><b>verifyLogout</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest</td>
 <td></td>
 <td>1</td>
-<td>sevenrmartSupermarket.Testscripts.LoginTest@70f02c32</td></tr>
+<td>sevenrmartSupermarket.Testscripts.LoginTest@512baff6</td></tr>
 <tr>
-<td title='sevenrmartSupermarket.Testscripts.LoginTest.loginWithInvalidPassword()'><b>loginWithInvalidPassword</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest</td>
+<td title='sevenrmartSupermarket.Testscripts.ManageSliderTest.addLinkToManageSlider()'><b>addLinkToManageSlider</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageSliderTest</td>
+<td></td>
+<td>9</td>
+<td>sevenrmartSupermarket.Testscripts.ManageSliderTest@4a9419d7</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.PushNotificationTest.sentPushNotification()'><b>sentPushNotification</b><br>Test class: sevenrmartSupermarket.Testscripts.PushNotificationTest</td>
+<td></td>
+<td>4</td>
+<td>sevenrmartSupermarket.Testscripts.PushNotificationTest@b93aad</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.LoginTest.loginDetails()'><b>loginDetails</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>sevenrmartSupermarket.Testscripts.LoginTest@512baff6</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.ManageLocationTest.cancelInManageLocation()'><b>cancelInManageLocation</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageLocationTest</td>
+<td></td>
+<td>12</td>
+<td>sevenrmartSupermarket.Testscripts.ManageLocationTest@f31c0c6</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.HomeTest.checkSiteNameIsDisplayedOnTop()'><b>checkSiteNameIsDisplayedOnTop</b><br>Test class: sevenrmartSupermarket.Testscripts.HomeTest</td>
+<td></td>
+<td>1</td>
+<td>sevenrmartSupermarket.Testscripts.HomeTest@51768776</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.LoginTest.verify_login_with_Credentials()'><b>verify_login_with_Credentials</b><br>Test class: sevenrmartSupermarket.Testscripts.LoginTest<br>Parameters: admin, admin</td>
 <td></td>
 <td>0</td>
-<td>sevenrmartSupermarket.Testscripts.LoginTest@70f02c32</td></tr>
+<td>sevenrmartSupermarket.Testscripts.LoginTest@512baff6</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.ManageLocationTest.resetInManageLocation()'><b>resetInManageLocation</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageLocationTest</td>
+<td></td>
+<td>3</td>
+<td>sevenrmartSupermarket.Testscripts.ManageLocationTest@f31c0c6</td></tr>
+<tr>
+<td title='sevenrmartSupermarket.Testscripts.ManageSliderTest.deleteInListSliderPage()'><b>deleteInListSliderPage</b><br>Test class: sevenrmartSupermarket.Testscripts.ManageSliderTest</td>
+<td></td>
+<td>4</td>
+<td>sevenrmartSupermarket.Testscripts.ManageSliderTest@4a9419d7</td></tr>
 </table><p>
 </body>
 </html>

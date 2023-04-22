@@ -1,16 +1,10 @@
 package sevenrmartSupermarket.Pages;
 
-import static org.testng.Assert.assertTrue;
-
-import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
-import Utilities.ExcelUtility;
 import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
@@ -27,35 +21,55 @@ public class ManageSliderPage {
 	@FindBy(xpath="//input[@id='link']") WebElement link;
 	@FindBy(xpath="//button[@class='btn btn-danger']") WebElement saveButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-	
-	public void clickManageSliderButton(){
-		boolean isManageSliderVisible=PageUtility.isElementDisplayed(manageSliderMenu);
-		assertTrue(isManageSliderVisible, "Manager slider option not visible");
-		PageUtility.clickOnElement(manageSliderMenu);
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Slider/status?id=448&st=inactive&page_ad=1']//following::span[@class='badge bg-success']") WebElement statusButton;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement statusChangedSuccessfullyAlert;
+	@FindBy(xpath="//li[@class='breadcrumb-item']") WebElement homeButtonInListSliderPage;
+	@FindBy(xpath="//div[@class='content-wrapper']") WebElement navigatedHomePage;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/slider/delete?del=469&page_ad=1']") WebElement deleteButton;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertShownAfterDelete;
+	public void clickDelete() {
+		WaitUtility.waitForClickableByWebElement(driver, deleteButton);
+	    PageUtility.clickOnElement(deleteButton);
 	}
-	public void clickNewButton(){
+	public ManageSliderPage clickNewButton(){
 		WaitUtility.waitForClickableByWebElement(driver, newButton);
 		PageUtility.clickOnElement(newButton);
+		return this;
 	}
-	public void enterLinkToLinkTextBox(String newlink) {
+	public ManageSliderPage enterLinkToLinkTextBox(String newlink) {
 		WaitUtility.waitForClickableByWebElement(driver, link);
-		//PageUtility.clickOnElement(link);
 		PageUtility.enterText(link, newlink);
-		}
-	public void clickSaveButton() {
+		return this;
+	}
+	public ManageSliderPage clickSaveButton() {
+		WaitUtility.waitForClickableByWebElement(driver, saveButton);
 		PageUtility.clickOnElement(saveButton);
-		}
+		return null;
+	}
+
 	public boolean listSliderPageisDisplayed() {
 		return PageUtility.isDisplay(listSlidersText);
-		    }
-	public boolean linkTextisDisplayed() {
-		return PageUtility.isDisplay(link);
-		    }
-	public boolean saveButtonIsEnabled() {
-		return PageUtility.isElementEnabled(saveButton);
 	}
+
 	public boolean alertisDisplayed() {
 		return PageUtility.isDisplay(alert);
-		    }
 	}
+	public boolean alertStatusChangeisDisplayed() {
+		return PageUtility.isDisplay(statusChangedSuccessfullyAlert);
+	}
+	public void clickStatusButton() {
+		WaitUtility.waitForClickableByWebElement(driver, statusButton);
+		PageUtility.clickOnElement(statusButton);
+	}
+	public void clickHomeButtonFromListSliderPage() {
+		WaitUtility.waitForClickableByWebElement(driver, homeButtonInListSliderPage);
+		PageUtility.clickOnElement(homeButtonInListSliderPage);
+	}
+	public boolean isHomePageDisplayedAfterClickingHomeButton() {
+		return PageUtility.isDisplay(homeButtonInListSliderPage);
+	}
+	public boolean isDeleteAlertDisplayed() {
+		return PageUtility.isDisplay(alertShownAfterDelete);
+	}
+}
 

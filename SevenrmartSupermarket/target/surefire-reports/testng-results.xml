@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23055" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:57 GST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="23055" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:57 GST">
+      <class name="sevenrmartSupermarket.Testscripts.LoginTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="5428" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:39 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="FAIL" signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="verifyLogin" duration-ms="1097" started-at="2023-04-17T17:37:39 GST" finished-at="2023-04-17T17:37:40 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Utilities.ExcelUtility.getString(ExcelUtility.java:63)
+at sevenrmartSupermarket.Testscripts.LoginTest.verifyLogin(LoginTest.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="984" started-at="2023-04-17T17:37:40 GST" finished-at="2023-04-17T17:37:41 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=FAILURE method=LoginTest.verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="2970" started-at="2023-04-17T17:37:41 GST" finished-at="2023-04-17T17:37:44 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="loginWithInvalidPassword()[pri:2, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="loginWithInvalidPassword" duration-ms="1292" started-at="2023-04-17T17:37:44 GST" finished-at="2023-04-17T17:37:45 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="784" started-at="2023-04-17T17:37:45 GST" finished-at="2023-04-17T17:37:46 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginTest.loginWithInvalidPassword()[pri:2, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="2808" started-at="2023-04-17T17:37:46 GST" finished-at="2023-04-17T17:37:49 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="loginWithInvalidUserName()[pri:3, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="loginWithInvalidUserName" duration-ms="1088" started-at="2023-04-17T17:37:49 GST" finished-at="2023-04-17T17:37:50 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUserName -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="778" started-at="2023-04-17T17:37:50 GST" finished-at="2023-04-17T17:37:51 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidUserName status=SUCCESS method=LoginTest.loginWithInvalidUserName()[pri:3, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="3091" started-at="2023-04-17T17:37:51 GST" finished-at="2023-04-17T17:37:54 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyLogout()[pri:4, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="verifyLogout" duration-ms="1834" started-at="2023-04-17T17:37:54 GST" finished-at="2023-04-17T17:37:56 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="823" started-at="2023-04-17T17:37:56 GST" finished-at="2023-04-17T17:37:57 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=LoginTest.verifyLogout()[pri:4, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

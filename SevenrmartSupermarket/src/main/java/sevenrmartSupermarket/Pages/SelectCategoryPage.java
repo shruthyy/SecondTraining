@@ -13,8 +13,8 @@ public class SelectCategoryPage {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	}
-	public void SelectElement(String input) {
-		List<WebElement>categories=	driver.findElements(By.xpath("//li[@class=\"nav-item\"]//a"));
+	public void SelectCategoryElement(String input) {
+		List<WebElement>categories=	driver.findElements(By.xpath("//ul[@data-widget='treeview']//li"));
 		for(WebElement category: categories)
 		{
 			String categoryName=category.getText();
