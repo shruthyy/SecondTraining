@@ -1,9 +1,9 @@
 package constants;
 
 public class Constants {
-	public static String CONFIGfILE = "\\src\\main\\java\\Resources\\config.properties";
-	public static String TESTDATAFILE = "\\src\\main\\java\\Resources\\ProjectTestdata.xlsx";
-	public static String chromedriverpath="\\src\\main\\java\\Resources\\chromedriver.exe";
-	public static String edgedriverpath="\\src\\main\\java\\Resources\\msedgedriver.exe";
-	public static String geckodriverpath="\\src\\main\\java\\Resources\\geckodriver.exe";
+	public static final String CONFIGfILE = "\\src\\main\\java\\Resources\\config.properties";
+	public static final String TESTDATAFILE = "\\src\\main\\java\\Resources\\ProjectTestdata.xlsx";
+	public static final String Chromedriverpath="\\src\\main\\java\\Resources\\chromedriver.exe";
+	public static final String Edgedriverpath="\\src\\main\\java\\Resources\\msedgedriver.exe";
+	public static final String Geckodriverpath="\\src\\main\\java\\Resources\\geckodriver.exe";
 }

@@ -24,15 +24,38 @@ public class ManageOfferCodePage {
 		@FindBy (xpath = "//input[@placeholder='Offer Code']") WebElement offercodeTextBoxElement;
 		@FindBy (xpath = "//button[@type='submit']") WebElement searchSubmitButtElement;
 		@FindBy (xpath = "//tbody//child::tr") WebElement foundofferCodElement;	
-
+        @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Offercode/add']") WebElement addButton;
+        @FindBy(xpath="//input[@id='offer_code']") WebElement enterOfferCodeTextBoxToAddOffer;
+        @FindBy(xpath="//input[@placeholder='Percentage']") WebElement percentageTextBox;
+        @FindBy(xpath="//input[@placeholder='Amount']") WebElement amountTextBox;
+        @FindBy(xpath="//button[text()='Save']") WebElement saveButton;
+        @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertWhenNewOfferAdded;
+        
 		By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
-
 
 	public ManageOfferCodePage clickonSearchButton() {
 			WaitUtility.waitForElementClickable(driver,searchButtonElement);
 			PageUtility.clickOnElement(searchButtonElement);
 			return this;
 		}
+	public ManageOfferCodePage clickAddButtonToAddNewOfferCode() {
+		WaitUtility.waitForClickableByWebElement(driver, addButton);
+		PageUtility.clickOnElement(addButton);
+		return this;
+	}
+	public ManageOfferCodePage enterOfferCodeToAddNewOffer(String newoffer) {
+		WaitUtility.waitForElement(driver, enterOfferCodeTextBoxToAddOffer);
+		PageUtility.enterText(enterOfferCodeTextBoxToAddOffer, newoffer);
+		return this;
+	}
+	public ManageOfferCodePage enterPercentage(String percentage) {
+		PageUtility.enterText(percentageTextBox, percentage);
+		return this;
+	}
+	public ManageOfferCodePage enterAmount(String amount) {
+		PageUtility.enterText(amountTextBox, amount);
+		return this;
+	}
 	public ManageOfferCodePage clickOnManageOfferLink() {
 			WaitUtility.waitForElementClickable(driver,manageOfferCodeLinkElement);
 			PageUtility.clickOnElement(manageOfferCodeLinkElement);
@@ -48,6 +71,14 @@ public class ManageOfferCodePage {
 			PageUtility.clickOnElement(searchSubmitButtElement);
 			return this;
 		}
+	public void clickSaveButton() {
+		WaitUtility.waitForClickableByWebElement(driver, saveButton);
+		PageUtility.clickOnElement(saveButton);
+		
+	}
+	public boolean isAlertDisplayedWhenNewOfferCodeIsAdded() {
+		return PageUtility.isDisplay(alertWhenNewOfferAdded);
+	}
 	public boolean searchInTheTable(String offercode) {
 			String offercodeText="";
 			List<WebElement> columnElements=driver.findElements(TableValuesBy);

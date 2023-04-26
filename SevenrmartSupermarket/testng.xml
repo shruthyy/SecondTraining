@@ -3,22 +3,24 @@
 <suite name="Suite">
 	<parameter name="browser" value="chrome"></parameter>
     <parameter name="offercode" value="TRYNEW20"></parameter>
+     
 	<listeners>
 		<listener class-name="sevenrmartSupermarket.Testscripts.Listeners" />
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>	  
- 
- 
-		<class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest"></class>
-		  
+          <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest"/>
+      
 	   
      <!--  	
-		<class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
+		
+	    <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest"></class>
+		  	    <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
+        <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
 		 <class name="sevenrmartSupermarket.Testscripts.HomeTest"/>
 		  <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest"/>
-	    <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest"></class>
-		   <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>	
+		<class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest"></class>
+		   <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest"/>
 		-->
 	  	 
     </classes>   

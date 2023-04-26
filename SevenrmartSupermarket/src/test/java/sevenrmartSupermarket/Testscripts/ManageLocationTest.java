@@ -94,31 +94,7 @@ public class ManageLocationTest extends Base{
 		Select selectCountry=new Select(dropDownCountrySearchPage);
 		selectCountry.selectByIndex(1);
 		managelocationpage.clickResetButton();
-		assertTrue(managelocationpage.pageShownAfterClickingResetIsDisplayed(),"Reset button not working");
-		
-	}
-//	@Test(retryAnalyzer =Retry.class)
-	public void searchFromListLocation() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-		String expectedData=ExcelUtility.getString(2,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
-		String input=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
-		loginpage=new LoginPage(driver);
-		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
-		selectcategorypage=new SelectCategoryPage(driver);
-		selectcategorypage.SelectCategoryElement(input);
-		managelocationpage=new ManageLocationPage(driver);
-		managelocationpage.clickSearchButton();
-		WebElement dropDownCountry=driver.findElement(By.xpath("//select[@id='country_id']"));
-		Select selectCountry=new Select(dropDownCountry);
-		selectCountry.selectByIndex(1);
-		WebElement dropDownState=driver.findElement(By.xpath("//select[@id='st_id']"));
-		Select selectState=new Select(dropDownState);
-		selectState.selectByIndex(10);
-		managelocationpage.enterLocation(expectedData);
-		managelocationpage.clickRedSearchButton();
-	    assertTrue(managelocationpage.searchListLocationTable(expectedData),"search data not found in list location table");	
-		
+		assertTrue(managelocationpage.pageShownAfterClickingResetIsDisplayed(),"Reset button not working");	
 	}
 
 }

@@ -15,7 +15,7 @@ public class ManageSliderTest extends Base {
 	ManageSliderPage  managesliderpage;
 	
 	
-	@Test(groups= {"smoke"})
+	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
 	public void addLinkToManageSlider() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -29,7 +29,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickNewButton().enterLinkToLinkTextBox(newlink).clickSaveButton();
 		assertTrue( managesliderpage.alertisDisplayed(), "link is not added successfully");    
 	}
-	@Test(groups= {"smoke"})
+	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
 	public void veriftClickingHomeButtonFromListSliderPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

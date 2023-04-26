@@ -60,7 +60,7 @@ public class Base {
 			}
 			
 		else if(browser.equalsIgnoreCase("gecko")){
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") +constants.Constants.geckodriverpath);
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") +constants.Constants.Geckodriverpath);
 			driver=new FirefoxDriver();
 			}
 		else if(browser.equalsIgnoreCase("edge")){

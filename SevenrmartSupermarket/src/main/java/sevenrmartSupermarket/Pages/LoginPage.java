@@ -49,9 +49,9 @@ import org.openqa.selenium.WebDriver;
 			 return this;			
 		}
 		public boolean isHomePageDisplayed() {
-			return PageUtility.isDisplay(homePageFull);
+			 return PageUtility.isDisplay(homePageFull);
 		}
 		public boolean isSignInBoxDisplayed() {
-			return PageUtility.isDisplay(signinBox);
+			 return PageUtility.isDisplay(signinBox);
 		}
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-22T16:52:16 GST" name="Suite" finished-at="2023-04-22T16:52:23 GST" duration-ms="6305">
+  <suite started-at="2023-04-25T22:15:08 GST" name="Suite" finished-at="2023-04-25T22:15:29 GST" duration-ms="20640">
     <groups>
     </groups>
-    <test started-at="2023-04-22T16:52:16 GST" name="Test" finished-at="2023-04-22T16:52:23 GST" duration-ms="6305">
-      <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest">
-        <test-method is-config="true" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@3deb2326]" started-at="2023-04-22T16:52:16 GST" name="initilizeBrowser" finished-at="2023-04-22T16:52:20 GST" duration-ms="3758" status="PASS">
+    <test started-at="2023-04-25T22:15:08 GST" name="Test" finished-at="2023-04-25T22:15:29 GST" duration-ms="20640">
+      <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest">
+        <test-method is-config="true" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:08 GST" name="initilizeBrowser" finished-at="2023-04-25T22:15:15 GST" duration-ms="6927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBrowser -->
-        <test-method signature="verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@3deb2326]" started-at="2023-04-22T16:52:20 GST" name="verify_seraching_With_Offercode_Shows_Corressponding_Details" finished-at="2023-04-22T16:52:22 GST" duration-ms="2205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TRYNEW20]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="checkUpdationInManagePaymentMethod()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:15 GST" name="checkUpdationInManagePaymentMethod" finished-at="2023-04-25T22:15:19 GST" duration-ms="3901" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_seraching_With_Offercode_Shows_Corressponding_Details -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@3deb2326]" started-at="2023-04-22T16:52:22 GST" name="browserQuit" finished-at="2023-04-22T16:52:23 GST" duration-ms="303" status="PASS">
+        </test-method> <!-- checkUpdationInManagePaymentMethod -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:19 GST" name="browserQuit" finished-at="2023-04-25T22:15:20 GST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_seraching_With_Offercode_Shows_Corressponding_Details status=SUCCESS method=ManageOfferCodeTest.verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@3deb2326] output={null}]]]>
+                <![CDATA[[TestResult name=checkUpdationInManagePaymentMethod status=SUCCESS method=ManagePaymentTest.checkUpdationInManagePaymentMethod()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- sevenrmartSupermarket.Testscripts.ManageOfferCodeTest -->
+        <test-method is-config="true" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:20 GST" name="initilizeBrowser" finished-at="2023-04-25T22:15:24 GST" duration-ms="4634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method signature="verifyWorkingOfResetButton_clickReset_RedirectToBackPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:24 GST" name="verifyWorkingOfResetButton_clickReset_RedirectToBackPage" finished-at="2023-04-25T22:15:29 GST" duration-ms="4735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfResetButton_clickReset_RedirectToBackPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd]" started-at="2023-04-25T22:15:29 GST" name="browserQuit" finished-at="2023-04-25T22:15:29 GST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWorkingOfResetButton_clickReset_RedirectToBackPage status=SUCCESS method=ManagePaymentTest.verifyWorkingOfResetButton_clickReset_RedirectToBackPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@27216cd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManagePaymentTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
