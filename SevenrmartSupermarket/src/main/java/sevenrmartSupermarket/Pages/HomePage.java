@@ -17,7 +17,7 @@ package sevenrmartSupermarket.Pages;
 		@FindBy(xpath="//button[text()='Sign In']")WebElement signInButton;
 		@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteName;
 		@FindBy(xpath="//li[@class='nav-item']") WebElement menuList;
-		
+		@FindBy(xpath="//div[@class='float-right d-none d-sm-inline-block']") WebElement footerMessage;
 	public String verifySiteNameIsShownAtTop() {
 			WaitUtility.waitForElement(driver, siteName);
 			return PageUtility.getElementText(siteName);	
@@ -25,5 +25,12 @@ package sevenrmartSupermarket.Pages;
 	public boolean siteNameisDisplayed() {
 			return PageUtility.isDisplay(siteName);
 		}
+	public boolean isFooterMessageDisplayedAtBottom() {
+		return PageUtility.isDisplay(footerMessage);
+	}
+	public String verifyFooterMessage() {
+		WaitUtility.waitForElement(driver, footerMessage);
+		return PageUtility.getElementText(footerMessage);
+	}
 		
 }

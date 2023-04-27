@@ -22,7 +22,6 @@ public class ManageLocationTest extends Base{
 	
 	@Test(priority=1 , retryAnalyzer =Retry.class)
 	public void addNewLocationToManageLocation() throws IOException {
-		String expectedData=ExcelUtility.getString(2,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
 	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
 		String input=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
@@ -42,15 +41,23 @@ public class ManageLocationTest extends Base{
 		selectstate.selectByIndex(10);
 		managelocationpage.enterLocation(location).enterDeliveryCharge(deliverycharge);
 		managelocationpage.clickSaveButtonToAddLocation();
-        
-		driver.navigate().to("searchpagelocation");
+		assertTrue(managelocationpage.alertForAddingLocation(),"New Location not added successfully");
+	}
+	@Test(priority=4, retryAnalyzer =Retry.class)
+	public void searchFromListLocationTableToFindLocation() throws IOException {
+		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
+	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
+		String input=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
+		String expectedData=ExcelUtility.getString(2,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
+		loginpage=new LoginPage(driver);
+		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
+		selectcategorypage=new SelectCategoryPage(driver);
+		selectcategorypage.SelectCategoryElement(input);
+		managelocationpage=new ManageLocationPage(driver);
 		managelocationpage.clickSearchButton();
 		WebElement dropDowncountry=driver.findElement(By.xpath("//select[@id='country_id']"));
 		Select selectcountrytosearch=new Select(dropDowncountry);
 		selectcountrytosearch.selectByIndex(1);
-		WebElement dropDownstate=driver.findElement(By.xpath("//select[@id='st_id']"));
-		Select selectstatetosearch=new Select(dropDownstate);
-		selectstatetosearch.selectByIndex(10);
 		managelocationpage.enterTheLocationToSearchInTable(expectedData);
 		managelocationpage.clickRedSearchButton();
 	    assertTrue(managelocationpage.searchListLocationTable(expectedData),"search data not found in list location table");	

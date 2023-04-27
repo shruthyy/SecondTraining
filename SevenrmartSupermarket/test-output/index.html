@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" class="method navigator-link" hash-for-method="checkUpdationInManagePaymentMethod">checkUpdationInManagePaymentMethod</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="clickResetButtonToGetListPagesTablePage(Papaw)">clickResetButtonToGetListPagesTablePage(Papaw)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" class="method navigator-link" hash-for-method="verifyWorkingOfResetButton_clickReset_RedirectToBackPage">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="searchPageUsingTitleFromListPageTable(Papaw)">searchPageUsingTitleFromListPageTable(Papaw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="updateListPageAfterSearchingFromListPageTable(kite, color)">updateListPageAfterSearchingFromListPageTable(kite, color)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="verifyDuplicatePageCreation">verifyDuplicatePageCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +137,38 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.ManagePaymentTest</span>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.ManagePagesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkUpdationInManagePaymentMethod">
-                  </a> <!-- checkUpdationInManagePaymentMethod -->
-                  <span class="method-name">checkUpdationInManagePaymentMethod</span>
+                  <a name="clickResetButtonToGetListPagesTablePage(Papaw)">
+                  </a> <!-- clickResetButtonToGetListPagesTablePage(Papaw) -->
+                  <span class="method-name">clickResetButtonToGetListPagesTablePage</span>
+                  <span class="parameters">(Papaw)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWorkingOfResetButton_clickReset_RedirectToBackPage">
-                  </a> <!-- verifyWorkingOfResetButton_clickReset_RedirectToBackPage -->
-                  <span class="method-name">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</span>
+                  <a name="searchPageUsingTitleFromListPageTable(Papaw)">
+                  </a> <!-- searchPageUsingTitleFromListPageTable(Papaw) -->
+                  <span class="method-name">searchPageUsingTitleFromListPageTable</span>
+                  <span class="parameters">(Papaw)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateListPageAfterSearchingFromListPageTable(kite, color)">
+                  </a> <!-- updateListPageAfterSearchingFromListPageTable(kite, color) -->
+                  <span class="method-name">updateListPageAfterSearchingFromListPageTable</span>
+                  <span class="parameters">(kite, color)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicatePageCreation">
+                  </a> <!-- verifyDuplicatePageCreation -->
+                  <span class="method-name">verifyDuplicatePageCreation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,14 +183,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;updatecolor&quot; value=&quot;color&quot;/&gt;
+  &lt;parameter name=&quot;phone&quot; value=&quot;sdfsa&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;offercode&quot; value=&quot;TRYNEW20&quot;/&gt;
+  &lt;parameter name=&quot;update&quot; value=&quot;kite&quot;/&gt;
+  &lt;parameter name=&quot;title&quot; value=&quot;Papaw&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;sevenrmartSupermarket.Testscripts.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManagePaymentTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManagePagesTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -203,20 +234,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWorkingOfResetButton_clickReset_RedirectToBackPage')
-data.setCell(0, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
-data.setCell(0, 3, 4735);
+data.setCell(0, 1, 'updateListPageAfterSearchingFromListPageTable')
+data.setCell(0, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(0, 3, 7892);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkUpdationInManagePaymentMethod')
-data.setCell(1, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
-data.setCell(1, 3, 3901);
+data.setCell(1, 1, 'verifyDuplicatePageCreation')
+data.setCell(1, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(1, 3, 5449);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickResetButtonToGetListPagesTablePage')
+data.setCell(2, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(2, 3, 2406);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'searchPageUsingTitleFromListPageTable')
+data.setCell(3, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(3, 3, 2234);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -242,30 +281,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManagePaymentTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManagePagesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkUpdationInManagePaymentMethod</span>
-                <span class="method-start">6928 ms</span>
+                <span class="method-name">clickResetButtonToGetListPagesTablePage(Papaw)</span>
+                <span class="method-start">4294 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=checkUpdationInManagePaymentMethod status=SUCCESS method=ManagePaymentTest.checkUpd...)</span>
-                <span class="method-start">10835 ms</span>
+                <span class="method-name">browserQuit([TestResult name=clickResetButtonToGetListPagesTablePage status=SUCCESS method=ManagePagesTest.click...)</span>
+                <span class="method-start">6706 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">11022 ms</span>
+                <span class="method-start">6967 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</span>
-                <span class="method-start">15656 ms</span>
+                <span class="method-name">searchPageUsingTitleFromListPageTable(Papaw)</span>
+                <span class="method-start">9292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyWorkingOfResetButton_clickReset_RedirectToBackPage status=SUCCESS method=Mana...)</span>
-                <span class="method-start">20392 ms</span>
+                <span class="method-name">browserQuit([TestResult name=searchPageUsingTitleFromListPageTable status=SUCCESS method=ManagePagesTest.searchP...)</span>
+                <span class="method-start">11529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">11913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateListPageAfterSearchingFromListPageTable(kite, color)</span>
+                <span class="method-start">16995 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=updateListPageAfterSearchingFromListPageTable status=SUCCESS method=ManagePagesTest...)</span>
+                <span class="method-start">24889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">25470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDuplicatePageCreation</span>
+                <span class="method-start">33855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyDuplicatePageCreation status=SUCCESS method=ManagePagesTest.verifyDuplicatePa...)</span>
+                <span class="method-start">39305 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

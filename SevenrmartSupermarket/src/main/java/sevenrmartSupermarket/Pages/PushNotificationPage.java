@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class PushNotificationPage {
 	public WebDriver driver;
@@ -17,7 +18,8 @@ public class PushNotificationPage {
 	@FindBy(xpath="//input[@id='description']") WebElement descriptionTextEnter;
 	@FindBy(xpath="//button[@type='submit']") WebElement sendButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement pushNotificationAlert;
-	
+	@FindBy(xpath="//a[@type='button']") WebElement resetButton;
+	@FindBy(xpath="//div[@class='form-group']") WebElement clearedTitleTextBox;
 	public PushNotificationPage enterTitleBox(String title){
 		PageUtility.enterText(titleTextEnter, title);
 		return this;
@@ -32,6 +34,14 @@ public class PushNotificationPage {
 	}
 	public boolean alertForPushisDisplayed() {
 		return PageUtility.isDisplay(pushNotificationAlert);
+	}
+	public boolean isTitleBoxClearedAfterClickingResetButton() {
+		return PageUtility.isDisplay(clearedTitleTextBox);
+	}
+	public  PushNotificationPage clickResetButton() {
+		WaitUtility.waitForClickableByWebElement(driver, resetButton);
+		PageUtility.clickOnElement(resetButton);
+		return this;
 	}
 
 }

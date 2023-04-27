@@ -13,8 +13,7 @@ public class ManageSliderPage {
 	public ManageSliderPage(WebDriver driver) {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
-	}
-	
+	}	
 	@FindBy(xpath = "//ul[@class='nav nav-pills nav-sidebar flex-column']/li[10]/a") WebElement manageSliderMenu;
 	@FindBy(xpath="//h1[text()='List Sliders']") WebElement listSlidersText;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Slider/add']") WebElement newButton ;
@@ -27,6 +26,22 @@ public class ManageSliderPage {
 	@FindBy(xpath="//div[@class='content-wrapper']") WebElement navigatedHomePage;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/slider/delete?del=469&page_ad=1']") WebElement deleteButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertShownAfterDelete;
+	@FindBy(xpath="//input[@id='main_img']") WebElement chooseFileImage;
+	@FindBy(xpath="//a[@type='button']") WebElement cancelButton;
+	@FindBy(xpath="//div[@class='container-fluid']") WebElement listSliderPageDisplayedAfterCancelling;
+	public ManageSliderPage  uploadImageToAddSlider() {
+		chooseFileImage.sendKeys("C:\\Users\\PROJECTS\\OneDrive\\Desktop\\firstcryImg.jpg");
+		chooseFileImage.submit();
+		return this;
+	}
+	public String toGetBackgroundColourOfNewButton() {
+		return (PageUtility.getCssValue(newButton));
+	}
+	public ManageSliderPage clickCancelButton() {
+		WaitUtility.waitForClickableByWebElement(driver, cancelButton);
+		PageUtility.clickOnElement(cancelButton);
+		return this;
+	}
 	public void clickDelete() {
 		WaitUtility.waitForClickableByWebElement(driver, deleteButton);
 	    PageUtility.clickOnElement(deleteButton);
@@ -50,7 +65,9 @@ public class ManageSliderPage {
 	public boolean listSliderPageisDisplayed() {
 		return PageUtility.isDisplay(listSlidersText);
 	}
-
+	public boolean isListSliderPageDisplayedAfterClickingCancelButton() {
+		return PageUtility.isDisplay(listSliderPageDisplayedAfterCancelling);
+	}
 	public boolean alertisDisplayed() {
 		return PageUtility.isDisplay(alert);
 	}

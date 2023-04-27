@@ -30,7 +30,7 @@ public class ManagePaymentTest extends Base{
 		managepaymentpage.clickDebitUpdateButton().changeValueInDebitPayLimitTextBox(amount).clickUpdate();
 		assertTrue(managepaymentpage.isAlertShownWhenUpdationIsDone(),"Updation not done successfully");
 	}
-	//@Test
+	@Test
 	public void verifyStatusChangeWhenStatusButtonIsClicked() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

@@ -30,7 +30,13 @@ public class ManageOfferCodePage {
         @FindBy(xpath="//input[@placeholder='Amount']") WebElement amountTextBox;
         @FindBy(xpath="//button[text()='Save']") WebElement saveButton;
         @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertWhenNewOfferAdded;
-        
+        @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Offercode/edit?edit=151&page_ad=1']") WebElement updateButton;
+        @FindBy(xpath="//input[@id='main_img']") WebElement uploadImage;
+        @FindBy(xpath="//button[text()='Update']") WebElement redUpdateButton;
+        @FindBy(xpath="//input[@placeholder='Offer Code']") WebElement offercodeSearchTextBox;
+        @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertWhenImageUpdated;
+        @FindBy(xpath="//a[@type='button']") WebElement resetButton;
+        @FindBy(xpath="//div[@class='container-fluid']") WebElement alertAfterClickingResetButton;
 		By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
 
 	public ManageOfferCodePage clickonSearchButton() {
@@ -38,6 +44,19 @@ public class ManageOfferCodePage {
 			PageUtility.clickOnElement(searchButtonElement);
 			return this;
 		}
+	public ManageOfferCodePage  chooseImageToUpdate() {
+		uploadImage.sendKeys("C:\\Users\\PROJECTS\\OneDrive\\Desktop\\firstcryImg.jpg");
+		uploadImage.submit();
+		return this;
+	}
+	public ManageOfferCodePage clickResetButton() {
+		PageUtility.clickOnElement(resetButton);
+		return this;
+	}
+	public void clickRedUpdateButton() {
+		WaitUtility.waitForClickableByWebElement(driver, redUpdateButton);
+		PageUtility.clickOnElement(redUpdateButton);
+	}
 	public ManageOfferCodePage clickAddButtonToAddNewOfferCode() {
 		WaitUtility.waitForClickableByWebElement(driver, addButton);
 		PageUtility.clickOnElement(addButton);
@@ -46,6 +65,10 @@ public class ManageOfferCodePage {
 	public ManageOfferCodePage enterOfferCodeToAddNewOffer(String newoffer) {
 		WaitUtility.waitForElement(driver, enterOfferCodeTextBoxToAddOffer);
 		PageUtility.enterText(enterOfferCodeTextBoxToAddOffer, newoffer);
+		return this;
+	}
+	public ManageOfferCodePage enterOffercodeToEditImage(String summeroffer) {
+		PageUtility.enterText(offercodeSearchTextBox, summeroffer);
 		return this;
 	}
 	public ManageOfferCodePage enterPercentage(String percentage) {
@@ -71,13 +94,22 @@ public class ManageOfferCodePage {
 			PageUtility.clickOnElement(searchSubmitButtElement);
 			return this;
 		}
+	public boolean isAlertDisplayedAfterClickingReset() {
+		return PageUtility.isDisplay(alertAfterClickingResetButton);
+	}
 	public void clickSaveButton() {
 		WaitUtility.waitForClickableByWebElement(driver, saveButton);
 		PageUtility.clickOnElement(saveButton);
-		
+	}
+	public ManageOfferCodePage  clickUpdateButton() {
+		PageUtility.clickOnElement(updateButton);
+		return this;
 	}
 	public boolean isAlertDisplayedWhenNewOfferCodeIsAdded() {
 		return PageUtility.isDisplay(alertWhenNewOfferAdded);
+	}
+	public boolean isAlertDisplayedWhenImageIsUpdated() {
+		return PageUtility.isDisplay(alertWhenImageUpdated);
 	}
 	public boolean searchInTheTable(String offercode) {
 			String offercodeText="";

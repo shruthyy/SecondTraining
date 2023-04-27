@@ -28,4 +28,17 @@ public class HomeTest extends Base{
 		String actualSiteName=homepage.verifySiteNameIsShownAtTop();
 		assertEquals(actualSiteName,expectedSiteName,"Site name is given wrong");
 	}
+	@Test
+	public void isCopyRightMessageDisplayedAsFooter() throws IOException {
+		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
+    	String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
+    	String expectedFooterMessage=ExcelUtility.getString(2,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"HomePage");
+    	loginpage=new LoginPage(driver);
+		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
+		homepage=new HomePage(driver);
+		homepage.isFooterMessageDisplayedAtBottom();
+		String actualFooterMessage=homepage.verifyFooterMessage();
+		assertEquals(actualFooterMessage,expectedFooterMessage,"copyright message is not displayed at bottom");
+		
+	}
 }

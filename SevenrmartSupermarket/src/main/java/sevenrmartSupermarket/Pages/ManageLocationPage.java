@@ -21,7 +21,6 @@ public class ManageLocationPage {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	}
- 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertWhenNewLocationAdded;
  	@FindBy(xpath="//a[@type='button']") WebElement cancelButton;
  	@FindBy(xpath="//div[@class='content-wrapper']") WebElement cancelBackPage;
  	@FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButton;
@@ -33,7 +32,7 @@ public class ManageLocationPage {
 	@FindBy(xpath="//button[@type='submit']") WebElement saveButtonToAddLocation;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-warning']") WebElement resetButton;
  	@FindBy(xpath="//input[@placeholder='Enter the Location']") WebElement enterLocationToSearch;
-	
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertAfterCreatingAddingNewLocation;
  	By tableValue=By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
  	
 	public ManageLocationPage clickNewButtonToAddLocation() {
@@ -57,7 +56,7 @@ public class ManageLocationPage {
 			 return this;
 		 }
 	public boolean alertForAddingLocation() {
-			return PageUtility.isDisplay(alertWhenNewLocationAdded);
+			return PageUtility.isDisplay(alertAfterCreatingAddingNewLocation);
 		}
 	public ManageLocationPage clickCancelButton() {
 			WaitUtility.waitForClickableByWebElement(driver, cancelButton);
