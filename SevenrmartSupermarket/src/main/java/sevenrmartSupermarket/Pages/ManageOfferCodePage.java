@@ -30,7 +30,7 @@ public class ManageOfferCodePage {
         @FindBy(xpath="//input[@placeholder='Amount']") WebElement amountTextBox;
         @FindBy(xpath="//button[text()='Save']") WebElement saveButton;
         @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertWhenNewOfferAdded;
-        @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Offercode/edit?edit=151&page_ad=1']") WebElement updateButton;
+        @FindBy(xpath="//a[@role='button']//following::i[@class='fas fa-edit']") WebElement updateButton;
         @FindBy(xpath="//input[@id='main_img']") WebElement uploadImage;
         @FindBy(xpath="//button[text()='Update']") WebElement redUpdateButton;
         @FindBy(xpath="//input[@placeholder='Offer Code']") WebElement offercodeSearchTextBox;

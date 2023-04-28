@@ -12,13 +12,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="sevenrmartSupermarket.Testscripts.ManagePagesTest">
+      <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest">
         <methods>
+          <include name="updateOfferCodeImage"/>
           <include name="browserQuit"/>
-          <include name="updateListPageAfterSearchingFromListPageTable"/>
           <include name="initilizeBrowser"/>
         </methods>
-      </class> <!-- sevenrmartSupermarket.Testscripts.ManagePagesTest -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageOfferCodeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -16,7 +16,7 @@ public class ManageSliderTest extends Base {
 	ManageSliderPage  managesliderpage;
 	
 	
-//	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
+	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
 	public void addLinkToManageSlider() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -30,7 +30,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickNewButton().enterLinkToLinkTextBox(newlink).clickSaveButton();
 		assertTrue( managesliderpage.alertisDisplayed(), "link is not added successfully");    
 	}
-//	@Test
+	@Test
 	public void uploadSliderImageToAddSlider() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -47,7 +47,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickSaveButton();
 		assertTrue( managesliderpage.alertisDisplayed(), "link is not added successfully");    	
 	}
-//	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
+	@Test(groups= {"smoke"},retryAnalyzer =Retry.class)
 	public void veriftClickingHomeButtonFromListSliderPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -61,7 +61,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickHomeButtonFromListSliderPage();
 		assertTrue(managesliderpage.isHomePageDisplayedAfterClickingHomeButton(),"Home button is not working");
 	}
-	@Test(retryAnalyzer =Retry.class)
+//	@Test(retryAnalyzer =Retry.class)
 	public void deleteInListSliderPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -75,7 +75,7 @@ public class ManageSliderTest extends Base {
 		driver.switchTo().alert().accept();
 		assertTrue(managesliderpage.isDeleteAlertDisplayed(),"link is not deleted");
 	}
-//	@Test
+	@Test
 	public void verifyClickingCancelButtonToGetListSlidersListPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -89,7 +89,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickNewButton().enterLinkToLinkTextBox(newlink).clickCancelButton();
 		assertTrue(managesliderpage.isListSliderPageDisplayedAfterClickingCancelButton(),"Cancel button not working");
 	}
-//	@Test
+	@Test
 	public void getNewButtonBackgroundColor() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

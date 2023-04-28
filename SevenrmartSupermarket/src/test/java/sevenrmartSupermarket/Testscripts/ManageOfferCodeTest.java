@@ -58,10 +58,8 @@ public class ManageOfferCodeTest extends Base {
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		manageoffercodepage=new ManageOfferCodePage(driver);
 		manageoffercodepage.clickOnManageOfferLink().clickonSearchButton().enterOfferCode(offercode).clickResetButton();
-		assertTrue(manageoffercodepage.isAlertDisplayedAfterClickingReset(),"Reset button not working");
-		 
+		assertTrue(manageoffercodepage.isAlertDisplayedAfterClickingReset(),"Reset button not working");		 
 	}
-
 }
 
 

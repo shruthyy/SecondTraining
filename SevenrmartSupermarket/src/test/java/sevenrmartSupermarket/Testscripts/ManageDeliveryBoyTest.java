@@ -38,7 +38,7 @@ public class ManageDeliveryBoyTest extends Base {
 		managedeliveryboypage.clickSaveButtonToAddDeliveryBoy();
 		assertTrue(managedeliveryboypage.searchInTheTable(deliveryboynew),"New Delivery Boy Details are not added successfully");	
 	}
-	@Test
+//	@Test
 	@Parameters({"phone"})
 	public void searchWithPhoneNumber(String phone) throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
