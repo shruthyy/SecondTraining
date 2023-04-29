@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <parameter name="password" value="admin"/>
+  <parameter name="updatecolor" value="color"/>
   <parameter name="browser" value="chrome"/>
-  <parameter name="username" value="admin"/>
+  <parameter name="offercode" value="TRYNEW20"/>
+  <parameter name="update" value="kite"/>
+  <parameter name="title" value="Papaw"/>
   <listeners>
     <listener class-name="sevenrmartSupermarket.Testscripts.Listeners"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="sevenrmartSupermarket.Testscripts.LoginTest">
+      <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest">
         <methods>
-          <include name="verifyLogin" invocation-numbers="0"/>
           <include name="browserQuit"/>
+          <include name="cancelInManageLocation"/>
           <include name="initilizeBrowser"/>
         </methods>
-      </class> <!-- sevenrmartSupermarket.Testscripts.LoginTest -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageLocationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

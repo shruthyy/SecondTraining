@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" retried="1" total="29" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23055" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:57 GST">
+  <suite name="Suite" duration-ms="554507" started-at="2023-04-28T18:16:26 GST" finished-at="2023-04-28T18:25:41 GST">
     <groups>
+      <group name="smoke">
+        <method signature="ManageSliderTest.addLinkToManageSlider()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="addLinkToManageSlider" class="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
+        <method signature="ManageSliderTest.veriftClickingHomeButtonFromListSliderPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="veriftClickingHomeButtonFromListSliderPage" class="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="23055" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:57 GST">
-      <class name="sevenrmartSupermarket.Testscripts.LoginTest">
-        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="5428" started-at="2023-04-17T17:37:34 GST" finished-at="2023-04-17T17:37:39 GST">
+    <test name="Test" duration-ms="554507" started-at="2023-04-28T18:16:26 GST" finished-at="2023-04-28T18:25:41 GST">
+      <class name="sevenrmartSupermarket.Testscripts.ManagePagesTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="initilizeBrowser" is-config="true" duration-ms="11396" started-at="2023-04-28T18:24:29 GST" finished-at="2023-04-28T18:24:41 GST">
           <params>
             <param index="0">
               <value>
@@ -18,7 +22,165 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBrowser -->
-        <test-method status="FAIL" signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="verifyLogin" duration-ms="1097" started-at="2023-04-17T17:37:39 GST" finished-at="2023-04-17T17:37:40 GST">
+        <test-method status="PASS" signature="clickResetButtonToGetListPagesTablePage(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="clickResetButtonToGetListPagesTablePage" duration-ms="3260" started-at="2023-04-28T18:24:41 GST" finished-at="2023-04-28T18:24:44 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Papaw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickResetButtonToGetListPagesTablePage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="browserQuit" is-config="true" duration-ms="838" started-at="2023-04-28T18:24:44 GST" finished-at="2023-04-28T18:24:45 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickResetButtonToGetListPagesTablePage status=SUCCESS method=ManagePagesTest.clickResetButtonToGetListPagesTablePage(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="initilizeBrowser" is-config="true" duration-ms="5620" started-at="2023-04-28T18:24:45 GST" finished-at="2023-04-28T18:24:50 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="searchPageUsingTitleFromListPageTable(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="searchPageUsingTitleFromListPageTable" duration-ms="4222" started-at="2023-04-28T18:24:50 GST" finished-at="2023-04-28T18:24:55 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Papaw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageUsingTitleFromListPageTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="browserQuit" is-config="true" duration-ms="1037" started-at="2023-04-28T18:24:55 GST" finished-at="2023-04-28T18:24:56 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchPageUsingTitleFromListPageTable status=SUCCESS method=ManagePagesTest.searchPageUsingTitleFromListPageTable(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="initilizeBrowser" is-config="true" duration-ms="5899" started-at="2023-04-28T18:24:56 GST" finished-at="2023-04-28T18:25:02 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="updateListPageAfterSearchingFromListPageTable(java.lang.String,java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="updateListPageAfterSearchingFromListPageTable" duration-ms="7925" started-at="2023-04-28T18:25:02 GST" finished-at="2023-04-28T18:25:09 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kite]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[color]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateListPageAfterSearchingFromListPageTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="browserQuit" is-config="true" duration-ms="1247" started-at="2023-04-28T18:25:09 GST" finished-at="2023-04-28T18:25:11 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateListPageAfterSearchingFromListPageTable status=SUCCESS method=ManagePagesTest.updateListPageAfterSearchingFromListPageTable(java.lang.String,java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="initilizeBrowser" is-config="true" duration-ms="5374" started-at="2023-04-28T18:25:11 GST" finished-at="2023-04-28T18:25:16 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyDuplicatePageCreation()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="verifyDuplicatePageCreation" duration-ms="6490" started-at="2023-04-28T18:25:16 GST" finished-at="2023-04-28T18:25:23 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicatePageCreation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a]" name="browserQuit" is-config="true" duration-ms="1053" started-at="2023-04-28T18:25:23 GST" finished-at="2023-04-28T18:25:24 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDuplicatePageCreation status=SUCCESS method=ManagePagesTest.verifyDuplicatePageCreation()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePagesTest@42e99e4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManagePagesTest -->
+      <class name="sevenrmartSupermarket.Testscripts.LoginTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="initilizeBrowser" is-config="true" duration-ms="9146" started-at="2023-04-28T18:18:30 GST" finished-at="2023-04-28T18:18:39 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyLogout_whenLogOutButtonIsClickedFromHomePage()[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="verifyLogout_whenLogOutButtonIsClickedFromHomePage" duration-ms="2535" started-at="2023-04-28T18:18:39 GST" finished-at="2023-04-28T18:18:42 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout_whenLogOutButtonIsClickedFromHomePage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="browserQuit" is-config="true" duration-ms="817" started-at="2023-04-28T18:18:42 GST" finished-at="2023-04-28T18:18:43 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogout_whenLogOutButtonIsClickedFromHomePage status=SUCCESS method=LoginTest.verifyLogout_whenLogOutButtonIsClickedFromHomePage()[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="initilizeBrowser" is-config="true" duration-ms="12151" started-at="2023-04-28T18:18:43 GST" finished-at="2023-04-28T18:18:55 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="verify_login_with_Credentials" duration-ms="2551" started-at="2023-04-28T18:18:55 GST" data-provider="LoginProvider" finished-at="2023-04-28T18:18:57 GST">
           <params>
             <param index="0">
               <value>
@@ -31,11 +193,129 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_Credentials -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f]" name="browserQuit" is-config="true" duration-ms="1278" started-at="2023-04-28T18:18:57 GST" finished-at="2023-04-28T18:18:59 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_login_with_Credentials status=SUCCESS method=LoginTest.verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@61862a7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.LoginTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="initilizeBrowser" is-config="true" duration-ms="6757" started-at="2023-04-28T18:22:58 GST" finished-at="2023-04-28T18:23:05 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="addNewLocationToManageLocation()[pri:1, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="addNewLocationToManageLocation" duration-ms="8743" started-at="2023-04-28T18:23:05 GST" finished-at="2023-04-28T18:23:13 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewLocationToManageLocation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="browserQuit" is-config="true" duration-ms="1304" started-at="2023-04-28T18:23:13 GST" finished-at="2023-04-28T18:23:15 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewLocationToManageLocation status=SUCCESS method=ManageLocationTest.addNewLocationToManageLocation()[pri:1, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="initilizeBrowser" is-config="true" duration-ms="10147" started-at="2023-04-28T18:23:15 GST" finished-at="2023-04-28T18:23:25 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="resetInManageLocation()[pri:2, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="resetInManageLocation" duration-ms="4538" started-at="2023-04-28T18:23:25 GST" finished-at="2023-04-28T18:23:29 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetInManageLocation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="browserQuit" is-config="true" duration-ms="998" started-at="2023-04-28T18:23:29 GST" finished-at="2023-04-28T18:23:30 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resetInManageLocation status=SUCCESS method=ManageLocationTest.resetInManageLocation()[pri:2, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="initilizeBrowser" is-config="true" duration-ms="5423" started-at="2023-04-28T18:23:30 GST" finished-at="2023-04-28T18:23:36 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="SKIP" signature="cancelInManageLocation()[pri:3, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="cancelInManageLocation" duration-ms="24495" retried="true" started-at="2023-04-28T18:23:36 GST" finished-at="2023-04-28T18:24:00 GST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-rounded btn-danger']"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5e71e9546627c8b7267904e9098a538, findElement {using=xpath, value=//a[@class='btn btn-rounded btn-danger']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROJECTS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58815/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5e71e9546627c8b7267904e9098a538]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Utilities.ExcelUtility.getString(ExcelUtility.java:63)
-at sevenrmartSupermarket.Testscripts.LoginTest.verifyLogin(LoginTest.java:25)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-rounded btn-danger']"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5e71e9546627c8b7267904e9098a538, findElement {using=xpath, value=//a[@class='btn btn-rounded btn-danger']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROJECTS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58815/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5e71e9546627c8b7267904e9098a538
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at Utilities.PageUtility.clickOnElement(PageUtility.java:58)
+at sevenrmartSupermarket.Pages.ManageLocationPage.clickNewButtonToAddLocation(ManageLocationPage.java:39)
+at sevenrmartSupermarket.Testscripts.ManageLocationTest.cancelInManageLocation(ManageLocationTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,22 +350,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="984" started-at="2023-04-17T17:37:40 GST" finished-at="2023-04-17T17:37:41 GST">
+        </test-method> <!-- cancelInManageLocation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="browserQuit" is-config="true" duration-ms="1083" started-at="2023-04-28T18:24:00 GST" finished-at="2023-04-28T18:24:01 GST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=FAILURE method=LoginTest.verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+                <![CDATA[[TestResult name=cancelInManageLocation status=SKIP method=ManageLocationTest.cancelInManageLocation()[pri:3, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="2970" started-at="2023-04-17T17:37:41 GST" finished-at="2023-04-17T17:37:44 GST">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="initilizeBrowser" is-config="true" duration-ms="5916" started-at="2023-04-28T18:24:01 GST" finished-at="2023-04-28T18:24:07 GST">
           <params>
             <param index="0">
               <value>
@@ -96,22 +376,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBrowser -->
-        <test-method status="PASS" signature="loginWithInvalidPassword()[pri:2, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="loginWithInvalidPassword" duration-ms="1292" started-at="2023-04-17T17:37:44 GST" finished-at="2023-04-17T17:37:45 GST">
+        <test-method status="PASS" signature="cancelInManageLocation()[pri:3, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="cancelInManageLocation" duration-ms="5367" started-at="2023-04-28T18:24:07 GST" finished-at="2023-04-28T18:24:13 GST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidPassword -->
-        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="784" started-at="2023-04-17T17:37:45 GST" finished-at="2023-04-17T17:37:46 GST">
+        </test-method> <!-- cancelInManageLocation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="browserQuit" is-config="true" duration-ms="895" started-at="2023-04-28T18:24:13 GST" finished-at="2023-04-28T18:24:14 GST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginTest.loginWithInvalidPassword()[pri:2, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+                <![CDATA[[TestResult name=cancelInManageLocation status=SUCCESS method=ManageLocationTest.cancelInManageLocation()[pri:3, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="2808" started-at="2023-04-17T17:37:46 GST" finished-at="2023-04-17T17:37:49 GST">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="initilizeBrowser" is-config="true" duration-ms="7647" started-at="2023-04-28T18:24:14 GST" finished-at="2023-04-28T18:24:21 GST">
           <params>
             <param index="0">
               <value>
@@ -122,22 +402,24 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBrowser -->
-        <test-method status="PASS" signature="loginWithInvalidUserName()[pri:3, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="loginWithInvalidUserName" duration-ms="1088" started-at="2023-04-17T17:37:49 GST" finished-at="2023-04-17T17:37:50 GST">
+        <test-method status="PASS" signature="searchFromListLocationTableToFindLocation()[pri:4, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="searchFromListLocationTableToFindLocation" duration-ms="7072" started-at="2023-04-28T18:24:21 GST" finished-at="2023-04-28T18:24:28 GST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidUserName -->
-        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="778" started-at="2023-04-17T17:37:50 GST" finished-at="2023-04-17T17:37:51 GST">
+        </test-method> <!-- searchFromListLocationTableToFindLocation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0]" name="browserQuit" is-config="true" duration-ms="958" started-at="2023-04-28T18:24:28 GST" finished-at="2023-04-28T18:24:29 GST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInvalidUserName status=SUCCESS method=LoginTest.loginWithInvalidUserName()[pri:3, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+                <![CDATA[[TestResult name=searchFromListLocationTableToFindLocation status=SUCCESS method=ManageLocationTest.searchFromListLocationTableToFindLocation()[pri:4, instance:sevenrmartSupermarket.Testscripts.ManageLocationTest@4d9e68d0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="initilizeBrowser" is-config="true" duration-ms="3091" started-at="2023-04-17T17:37:51 GST" finished-at="2023-04-17T17:37:54 GST">
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageLocationTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest@14dd9eb7]" name="initilizeBrowser" is-config="true" duration-ms="5989" started-at="2023-04-28T18:25:24 GST" finished-at="2023-04-28T18:25:30 GST">
           <params>
             <param index="0">
               <value>
@@ -148,22 +430,492 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBrowser -->
-        <test-method status="PASS" signature="verifyLogout()[pri:4, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="verifyLogout" duration-ms="1834" started-at="2023-04-17T17:37:54 GST" finished-at="2023-04-17T17:37:56 GST">
+        <test-method status="PASS" signature="verifyCancelButtonWorking()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest@14dd9eb7]" name="verifyCancelButtonWorking" duration-ms="9821" started-at="2023-04-28T18:25:30 GST" finished-at="2023-04-28T18:25:39 GST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67]" name="browserQuit" is-config="true" duration-ms="823" started-at="2023-04-17T17:37:56 GST" finished-at="2023-04-17T17:37:57 GST">
+        </test-method> <!-- verifyCancelButtonWorking -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest@14dd9eb7]" name="browserQuit" is-config="true" duration-ms="1288" started-at="2023-04-28T18:25:39 GST" finished-at="2023-04-28T18:25:41 GST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=LoginTest.verifyLogout()[pri:4, instance:sevenrmartSupermarket.Testscripts.LoginTest@67a20f67] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCancelButtonWorking status=SUCCESS method=ManageDeliveryBoyTest.verifyCancelButtonWorking()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest@14dd9eb7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- sevenrmartSupermarket.Testscripts.LoginTest -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="initilizeBrowser" is-config="true" duration-ms="54916" started-at="2023-04-28T18:20:59 GST" finished-at="2023-04-28T18:21:54 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="addLinkToManageSlider()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="addLinkToManageSlider" duration-ms="11218" started-at="2023-04-28T18:21:54 GST" finished-at="2023-04-28T18:22:05 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLinkToManageSlider -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="browserQuit" is-config="true" duration-ms="844" started-at="2023-04-28T18:22:05 GST" finished-at="2023-04-28T18:22:06 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addLinkToManageSlider status=SUCCESS method=ManageSliderTest.addLinkToManageSlider()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="initilizeBrowser" is-config="true" duration-ms="5026" started-at="2023-04-28T18:22:06 GST" finished-at="2023-04-28T18:22:11 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="getNewButtonBackgroundColor()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="getNewButtonBackgroundColor" duration-ms="3222" started-at="2023-04-28T18:22:11 GST" finished-at="2023-04-28T18:22:14 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNewButtonBackgroundColor -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="browserQuit" is-config="true" duration-ms="938" started-at="2023-04-28T18:22:14 GST" finished-at="2023-04-28T18:22:15 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getNewButtonBackgroundColor status=SUCCESS method=ManageSliderTest.getNewButtonBackgroundColor()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="initilizeBrowser" is-config="true" duration-ms="5512" started-at="2023-04-28T18:22:15 GST" finished-at="2023-04-28T18:22:21 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="veriftClickingHomeButtonFromListSliderPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="veriftClickingHomeButtonFromListSliderPage" duration-ms="5187" started-at="2023-04-28T18:22:21 GST" finished-at="2023-04-28T18:22:26 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriftClickingHomeButtonFromListSliderPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="browserQuit" is-config="true" duration-ms="844" started-at="2023-04-28T18:22:26 GST" finished-at="2023-04-28T18:22:27 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=veriftClickingHomeButtonFromListSliderPage status=SUCCESS method=ManageSliderTest.veriftClickingHomeButtonFromListSliderPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="initilizeBrowser" is-config="true" duration-ms="7557" started-at="2023-04-28T18:22:27 GST" finished-at="2023-04-28T18:22:34 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyClickingCancelButtonToGetListSlidersListPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="verifyClickingCancelButtonToGetListSlidersListPage" duration-ms="22519" started-at="2023-04-28T18:22:34 GST" finished-at="2023-04-28T18:22:57 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingCancelButtonToGetListSlidersListPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce]" name="browserQuit" is-config="true" duration-ms="886" started-at="2023-04-28T18:22:57 GST" finished-at="2023-04-28T18:22:58 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickingCancelButtonToGetListSlidersListPage status=SUCCESS method=ManageSliderTest.verifyClickingCancelButtonToGetListSlidersListPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageSliderTest@1d9b7cce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageSliderTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="initilizeBrowser" is-config="true" duration-ms="5860" started-at="2023-04-28T18:16:43 GST" finished-at="2023-04-28T18:16:49 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="addNewOfferCode()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="addNewOfferCode" duration-ms="4884" started-at="2023-04-28T18:16:49 GST" finished-at="2023-04-28T18:16:54 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewOfferCode -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="browserQuit" is-config="true" duration-ms="871" started-at="2023-04-28T18:16:54 GST" finished-at="2023-04-28T18:16:55 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewOfferCode status=SUCCESS method=ManageOfferCodeTest.addNewOfferCode()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="initilizeBrowser" is-config="true" duration-ms="10534" started-at="2023-04-28T18:16:55 GST" finished-at="2023-04-28T18:17:05 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyResetButtonToStartNewSearch(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="verifyResetButtonToStartNewSearch" duration-ms="7213" started-at="2023-04-28T18:17:05 GST" finished-at="2023-04-28T18:17:13 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TRYNEW20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetButtonToStartNewSearch -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="browserQuit" is-config="true" duration-ms="676" started-at="2023-04-28T18:17:13 GST" finished-at="2023-04-28T18:17:13 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetButtonToStartNewSearch status=SUCCESS method=ManageOfferCodeTest.verifyResetButtonToStartNewSearch(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="initilizeBrowser" is-config="true" duration-ms="10040" started-at="2023-04-28T18:17:13 GST" finished-at="2023-04-28T18:17:23 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="verify_seraching_With_Offercode_Shows_Corressponding_Details" duration-ms="6543" started-at="2023-04-28T18:17:23 GST" finished-at="2023-04-28T18:17:30 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TRYNEW20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_seraching_With_Offercode_Shows_Corressponding_Details -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382]" name="browserQuit" is-config="true" duration-ms="741" started-at="2023-04-28T18:17:30 GST" finished-at="2023-04-28T18:17:31 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_seraching_With_Offercode_Shows_Corressponding_Details status=SUCCESS method=ManageOfferCodeTest.verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageOfferCodeTest@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageOfferCodeTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageCategoryTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="initilizeBrowser" is-config="true" duration-ms="11415" started-at="2023-04-28T18:17:56 GST" finished-at="2023-04-28T18:18:07 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="searchFromListCategoryTable()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="searchFromListCategoryTable" duration-ms="6894" started-at="2023-04-28T18:18:07 GST" finished-at="2023-04-28T18:18:14 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFromListCategoryTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="browserQuit" is-config="true" duration-ms="721" started-at="2023-04-28T18:18:14 GST" finished-at="2023-04-28T18:18:15 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchFromListCategoryTable status=SUCCESS method=ManageCategoryTest.searchFromListCategoryTable()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="initilizeBrowser" is-config="true" duration-ms="9411" started-at="2023-04-28T18:18:15 GST" finished-at="2023-04-28T18:18:24 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyClickingResetButtonToGoToListCategoryPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="verifyClickingResetButtonToGoToListCategoryPage" duration-ms="5489" started-at="2023-04-28T18:18:24 GST" finished-at="2023-04-28T18:18:30 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingResetButtonToGoToListCategoryPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b]" name="browserQuit" is-config="true" duration-ms="681" started-at="2023-04-28T18:18:30 GST" finished-at="2023-04-28T18:18:30 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickingResetButtonToGoToListCategoryPage status=SUCCESS method=ManageCategoryTest.verifyClickingResetButtonToGoToListCategoryPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageCategoryTest@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageCategoryTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="initilizeBrowser" is-config="true" duration-ms="16390" started-at="2023-04-28T18:19:39 GST" finished-at="2023-04-28T18:19:55 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="checkUpdationInManagePaymentMethod()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="checkUpdationInManagePaymentMethod" duration-ms="14950" started-at="2023-04-28T18:19:55 GST" finished-at="2023-04-28T18:20:10 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdationInManagePaymentMethod -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="browserQuit" is-config="true" duration-ms="1023" started-at="2023-04-28T18:20:10 GST" finished-at="2023-04-28T18:20:11 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUpdationInManagePaymentMethod status=SUCCESS method=ManagePaymentTest.checkUpdationInManagePaymentMethod()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="initilizeBrowser" is-config="true" duration-ms="29729" started-at="2023-04-28T18:20:11 GST" finished-at="2023-04-28T18:20:41 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyWorkingOfResetButton_clickReset_RedirectToBackPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="verifyWorkingOfResetButton_clickReset_RedirectToBackPage" duration-ms="17346" started-at="2023-04-28T18:20:41 GST" finished-at="2023-04-28T18:20:58 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfResetButton_clickReset_RedirectToBackPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada]" name="browserQuit" is-config="true" duration-ms="757" started-at="2023-04-28T18:20:58 GST" finished-at="2023-04-28T18:20:59 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWorkingOfResetButton_clickReset_RedirectToBackPage status=SUCCESS method=ManagePaymentTest.verifyWorkingOfResetButton_clickReset_RedirectToBackPage()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManagePaymentTest@7334aada] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManagePaymentTest -->
+      <class name="sevenrmartSupermarket.Testscripts.HomeTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="initilizeBrowser" is-config="true" duration-ms="16995" started-at="2023-04-28T18:18:59 GST" finished-at="2023-04-28T18:19:16 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="checkSiteNameIsDisplayedInHomePage()[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="checkSiteNameIsDisplayedInHomePage" duration-ms="6027" started-at="2023-04-28T18:19:16 GST" finished-at="2023-04-28T18:19:22 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSiteNameIsDisplayedInHomePage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="browserQuit" is-config="true" duration-ms="1007" started-at="2023-04-28T18:19:22 GST" finished-at="2023-04-28T18:19:23 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSiteNameIsDisplayedInHomePage status=SUCCESS method=HomeTest.checkSiteNameIsDisplayedInHomePage()[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="initilizeBrowser" is-config="true" duration-ms="12183" started-at="2023-04-28T18:19:23 GST" finished-at="2023-04-28T18:19:35 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="isCopyRightMessageDisplayedAsFooter()[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="isCopyRightMessageDisplayedAsFooter" duration-ms="3147" started-at="2023-04-28T18:19:35 GST" finished-at="2023-04-28T18:19:38 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCopyRightMessageDisplayedAsFooter -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e]" name="browserQuit" is-config="true" duration-ms="934" started-at="2023-04-28T18:19:38 GST" finished-at="2023-04-28T18:19:39 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=isCopyRightMessageDisplayedAsFooter status=SUCCESS method=HomeTest.isCopyRightMessageDisplayedAsFooter()[pri:0, instance:sevenrmartSupermarket.Testscripts.HomeTest@441772e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.HomeTest -->
+      <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="initilizeBrowser" is-config="true" duration-ms="5693" started-at="2023-04-28T18:17:31 GST" finished-at="2023-04-28T18:17:36 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="sentPushNotification()[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="sentPushNotification" duration-ms="4835" started-at="2023-04-28T18:17:36 GST" finished-at="2023-04-28T18:17:41 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sentPushNotification -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="browserQuit" is-config="true" duration-ms="813" started-at="2023-04-28T18:17:41 GST" finished-at="2023-04-28T18:17:42 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sentPushNotification status=SUCCESS method=PushNotificationTest.sentPushNotification()[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="initilizeBrowser" is-config="true" duration-ms="8254" started-at="2023-04-28T18:17:42 GST" finished-at="2023-04-28T18:17:50 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyClickingResetButtonToGetTitleBoxCleared()[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="verifyClickingResetButtonToGetTitleBoxCleared" duration-ms="4143" started-at="2023-04-28T18:17:50 GST" finished-at="2023-04-28T18:17:54 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingResetButtonToGetTitleBoxCleared -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3]" name="browserQuit" is-config="true" duration-ms="1195" started-at="2023-04-28T18:17:54 GST" finished-at="2023-04-28T18:17:56 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickingResetButtonToGetTitleBoxCleared status=SUCCESS method=PushNotificationTest.verifyClickingResetButtonToGetTitleBoxCleared()[pri:0, instance:sevenrmartSupermarket.Testscripts.PushNotificationTest@dbf57b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.PushNotificationTest -->
+      <class name="sevenrmartSupermarket.Testscripts.ManageUsersTest">
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="initilizeBrowser" is-config="true" duration-ms="5355" started-at="2023-04-28T18:16:26 GST" finished-at="2023-04-28T18:16:32 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="searchUserFromListUsersTable()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="searchUserFromListUsersTable" duration-ms="3520" started-at="2023-04-28T18:16:32 GST" finished-at="2023-04-28T18:16:35 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUserFromListUsersTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="browserQuit" is-config="true" duration-ms="820" started-at="2023-04-28T18:16:35 GST" finished-at="2023-04-28T18:16:36 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchUserFromListUsersTable status=SUCCESS method=ManageUsersTest.searchUserFromListUsersTable()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initilizeBrowser(java.lang.String)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="initilizeBrowser" is-config="true" duration-ms="4135" started-at="2023-04-28T18:16:36 GST" finished-at="2023-04-28T18:16:40 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="viewPasswordOfSearchedUser()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="viewPasswordOfSearchedUser" duration-ms="2405" started-at="2023-04-28T18:16:40 GST" finished-at="2023-04-28T18:16:42 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewPasswordOfSearchedUser -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7]" name="browserQuit" is-config="true" duration-ms="830" started-at="2023-04-28T18:16:42 GST" finished-at="2023-04-28T18:16:43 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewPasswordOfSearchedUser status=SUCCESS method=ManageUsersTest.viewPasswordOfSearchedUser()[pri:0, instance:sevenrmartSupermarket.Testscripts.ManageUsersTest@130161f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- sevenrmartSupermarket.Testscripts.ManageUsersTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -27,6 +27,7 @@ public class ManageLocationTest extends Base{
 		String input=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
 		String location=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
 		String deliverycharge=ExcelUtility.getString(0,2,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
+		String country=ExcelUtility.getString(0,3,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageLocation");
 		loginpage=new LoginPage(driver);
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		selectcategorypage=new SelectCategoryPage(driver);
@@ -43,7 +44,7 @@ public class ManageLocationTest extends Base{
 		managelocationpage.clickSaveButtonToAddLocation();
 		assertTrue(managelocationpage.alertForAddingLocation(),"New Location not added successfully");
 	}
-	@Test(priority=4, retryAnalyzer =Retry.class)
+//	@Test(priority=4, retryAnalyzer =Retry.class)
 	public void searchFromListLocationTableToFindLocation() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
 	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -64,7 +65,7 @@ public class ManageLocationTest extends Base{
 		
 	}
 	
-	@Test(priority=3 , retryAnalyzer =Retry.class)
+//	@Test(priority=3 , retryAnalyzer =Retry.class)
 	public void cancelInManageLocation() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -86,7 +87,7 @@ public class ManageLocationTest extends Base{
 		managelocationpage.enterLocation(location).enterDeliveryCharge(deliverycharge).clickCancelButton();
 		assertTrue(managelocationpage.listPageShownAfterCancelling(),"Cancell button not working");
 	}
-	@Test(priority=2 , retryAnalyzer =Retry.class)
+//	@Test(priority=2 , retryAnalyzer =Retry.class)
 	public void resetInManageLocation() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

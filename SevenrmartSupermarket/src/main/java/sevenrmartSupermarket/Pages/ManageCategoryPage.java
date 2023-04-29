@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class ManageCategoryPage {
 	public WebDriver driver;
@@ -20,9 +21,39 @@ public class ManageCategoryPage {
 	@FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButton;
 	@FindBy(xpath="//input[@placeholder='Category']") WebElement categoryTextBox;
 	@FindBy(xpath="//button[@name='Search']") WebElement redSearchButton;
+	@FindBy(xpath="//a[@type='button']") WebElement resetButton;
+	@FindBy(xpath="//div[@class='content-header']") WebElement listCategoryDisplayAfterReset;
 	
 	By TableValuesBy=By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
 	
+	public ManageCategoryPage clickCategoryMoreInfoButton() {
+		WaitUtility.waitForClickableByWebElement(driver, selectCategoryElement);
+		PageUtility.clickOnElement(selectCategoryElement);
+		return this;
+	}
+	public ManageCategoryPage clickSearchButton() {
+		WaitUtility.waitForClickableByWebElement(driver, searchButton);
+		PageUtility.clickOnElement(searchButton);
+		return this;
+	}
+	public ManageCategoryPage enterCategoryToTextBoxForSearching(String category) {
+		WaitUtility.waitForElement(driver, categoryTextBox);
+		PageUtility.enterText(categoryTextBox, category);
+		return this;
+	}
+	public ManageCategoryPage clickRedSearchButton() {
+		WaitUtility.waitForClickableByWebElement(driver,redSearchButton );
+		PageUtility.clickOnElement(redSearchButton);
+		return this;
+	}
+	public ManageCategoryPage clickResetButton() {
+		WaitUtility.waitForClickableByWebElement(driver,resetButton );
+		PageUtility.clickOnElement(resetButton);
+		return this;
+	}
+	public boolean isListCategoryPageDisplayedAfterClickingResetButton() {
+		return PageUtility.isDisplay(listCategoryDisplayAfterReset);
+	}
 	public boolean searchInTheTable(String category) {
 		String categoryText="";
 		List<WebElement> columnElements=driver.findElements(TableValuesBy);
@@ -37,21 +68,4 @@ public class ManageCategoryPage {
 			return false;
 
 		}		
-	public ManageCategoryPage clickCategoryMoreInfoButton() {
-		PageUtility.clickOnElement(selectCategoryElement);
-		return this;
-	}
-	public ManageCategoryPage clickSearchButton() {
-		PageUtility.clickOnElement(searchButton);
-		return this;
-	}
-	public ManageCategoryPage enterCategoryToTextBoxForSearching(String category) {
-		PageUtility.enterText(categoryTextBox, category);
-		return this;
-	}
-	public ManageCategoryPage clickRedSearchButton() {
-		PageUtility.clickOnElement(redSearchButton);
-		return this;
-	}
-
 }

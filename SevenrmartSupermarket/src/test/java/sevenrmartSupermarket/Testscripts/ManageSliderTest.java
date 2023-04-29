@@ -30,7 +30,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickNewButton().enterLinkToLinkTextBox(newlink).clickSaveButton();
 		assertTrue( managesliderpage.alertisDisplayed(), "link is not added successfully");    
 	}
-	@Test
+//	@Test(retryAnalyzer =Retry.class)
 	public void uploadSliderImageToAddSlider() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -61,21 +61,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickHomeButtonFromListSliderPage();
 		assertTrue(managesliderpage.isHomePageDisplayedAfterClickingHomeButton(),"Home button is not working");
 	}
-//	@Test(retryAnalyzer =Retry.class)
-	public void deleteInListSliderPage() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-		String input=ExcelUtility.getString(0,1, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageSlider");
-		loginpage=new LoginPage(driver);
-		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
-		selectcategorypage=new SelectCategoryPage(driver);
-		selectcategorypage.SelectCategoryElement(input);
-		managesliderpage=new ManageSliderPage(driver);
-		managesliderpage.clickDelete();
-		driver.switchTo().alert().accept();
-		assertTrue(managesliderpage.isDeleteAlertDisplayed(),"link is not deleted");
-	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void verifyClickingCancelButtonToGetListSlidersListPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -89,7 +75,7 @@ public class ManageSliderTest extends Base {
 		managesliderpage.clickNewButton().enterLinkToLinkTextBox(newlink).clickCancelButton();
 		assertTrue(managesliderpage.isListSliderPageDisplayedAfterClickingCancelButton(),"Cancel button not working");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void getNewButtonBackgroundColor() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

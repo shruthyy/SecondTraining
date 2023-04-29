@@ -32,10 +32,12 @@ public class ManageDeliveryBoyPage {
 	By SearchTableBy=By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
     
     public ManageDeliveryBoyPage clickNewButtonToAddDeliveryBoy() {
+    	WaitUtility.waitForClickableByWebElement(driver, newButtonToAddDeliveryBoy);
 		PageUtility.clickOnElement(newButtonToAddDeliveryBoy);
 		return this;
 	}
 	public ManageDeliveryBoyPage enterNameToAddNewDeliveryBoy(String name) {
+		WaitUtility.waitForElement(driver, enterNameTextBox);
 		PageUtility.enterText(enterNameTextBox, name);
 		return this;
 	}
@@ -44,6 +46,7 @@ public class ManageDeliveryBoyPage {
 		return this;
 	}
 	public ManageDeliveryBoyPage enterUsernameToAddNewDeliveryBoy(String username) {
+		WaitUtility.waitForElement(driver,enterUsernameTextBox);
 		PageUtility.enterText(enterUsernameTextBox, username);
 		return this;
 	}
@@ -52,9 +55,11 @@ public class ManageDeliveryBoyPage {
 		PageUtility.submit(saveButtonToAddDeliveryBoy);	
 	}
 	public void isSearchWithPhoneNumberResultDisplayed() {
+		WaitUtility.waitForElement(driver, searchWithPhoneResult);
 		PageUtility.isDisplay(searchWithPhoneResult);
 	}
 	public void clickRedSearchButton() {
+		WaitUtility.waitForClickableByWebElement(driver, redSearchButton);
 		PageUtility.clickOnElement(redSearchButton);
 	}
 	public void clickCancelButton() {
@@ -62,6 +67,7 @@ public class ManageDeliveryBoyPage {
 		PageUtility.submit(cancelButton);
 	}
 	public void clickSearchButton() {
+		WaitUtility.waitForClickableByWebElement(driver,searchButton );
 		PageUtility.clickOnElement(searchButton);
 	}
 	public void enterPhNumbToTextBox(String phone) {

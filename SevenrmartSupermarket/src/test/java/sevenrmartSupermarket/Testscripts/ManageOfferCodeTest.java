@@ -24,7 +24,7 @@ public class ManageOfferCodeTest extends Base {
 		manageoffercodepage.clickOnManageOfferLink().clickonSearchButton().enterOfferCode(offercode).clickonSearchSubmitButton();
 	    assertTrue( manageoffercodepage.searchInTheTable(offercode),"Offercode is not shown in list");
 		}
-//	@Test(retryAnalyzer = Retry.class)
+	@Test(retryAnalyzer = Retry.class)
 	public void addNewOfferCode() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -38,7 +38,7 @@ public class ManageOfferCodeTest extends Base {
 		manageoffercodepage.clickSaveButton();
 	    assertTrue( manageoffercodepage.isAlertDisplayedWhenNewOfferCodeIsAdded(),"New Offer code is not created");
 	}
-	@Test(retryAnalyzer = Retry.class)
+//	@Test(retryAnalyzer = Retry.class)
 	public void updateOfferCodeImage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -49,7 +49,7 @@ public class ManageOfferCodeTest extends Base {
 		manageoffercodepage.clickOnManageOfferLink().clickonSearchButton().enterOffercodeToEditImage(summeroffer).clickonSearchSubmitButton().clickUpdateButton().chooseImageToUpdate();
 	    assertTrue(manageoffercodepage.isAlertDisplayedWhenImageIsUpdated(),"Image updation not successful");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	@Parameters({"offercode"})
 	public void verifyResetButtonToStartNewSearch(String offercode) throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

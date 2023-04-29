@@ -3,7 +3,6 @@
 <suite name="Suite">
 	<parameter name="browser" value="chrome"></parameter>
     <parameter name="offercode" value="TRYNEW20"></parameter>
-     <parameter name="phone" value="sdfsa"></parameter>
      <parameter name="title" value="Papaw"></parameter>
      <parameter name="update" value="kite"></parameter>
      <parameter name="updatecolor" value="color"></parameter>	
@@ -13,22 +12,32 @@
   <test thread-count="5" name="Test">
 	  
     <classes>	  
-    
-	   <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest"></class>
-	   	 <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest"></class>  
-     <class name="sevenrmartSupermarket.Testscripts.ManageCategoryTest"/>
-      <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
+   	      
+	        <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest"/>   
+	          <class name="sevenrmartSupermarket.Testscripts.ManageUsersTest"/>   
+	       <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest"></class>
+	   	  <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest"></class>  
+          <class name="sevenrmartSupermarket.Testscripts.ManageCategoryTest"/>
+          <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
 	   	  <class name="sevenrmartSupermarket.Testscripts.HomeTest"/>
-	   	    <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest"/>
+	   	   <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest"/>
 	   	    <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
-	   <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest"/>   
+	   	      <class name="sevenrmartSupermarket.Testscripts.ManagePagesTest"/>
+		      <class name="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest"/>
+		     
+     <!--  	
+	
+		    <class name="sevenrmartSupermarket.Testscripts.ManageUsersTest"/>   
+	       <class name="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest"></class>
+	   	  <class name="sevenrmartSupermarket.Testscripts.PushNotificationTest"></class>  
+          <class name="sevenrmartSupermarket.Testscripts.ManageCategoryTest"/>
+          <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
+	   	  <class name="sevenrmartSupermarket.Testscripts.HomeTest"/>
+	   	   <class name="sevenrmartSupermarket.Testscripts.ManagePaymentTest"/>
+	   	    <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
+	        <class name="sevenrmartSupermarket.Testscripts.ManageLocationTest"/>   
 		      <class name="sevenrmartSupermarket.Testscripts.ManagePagesTest"/>
 		      <class name="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest"/>
-     <!--  	
-		  
-	   	    <class name="sevenrmartSupermarket.Testscripts.ManageUsersTest"/>
-	   	    
-	  
 		-->
 	  	 
     </classes>   

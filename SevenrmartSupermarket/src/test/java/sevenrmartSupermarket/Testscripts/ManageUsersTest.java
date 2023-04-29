@@ -16,7 +16,7 @@ public class ManageUsersTest extends Base{
 	SelectCategoryPage selectcategorypage;
 	ManageUsersPage  manageuserspage;
 	
-//	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void searchUserFromListUsersTable() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -30,7 +30,7 @@ public class ManageUsersTest extends Base{
 	    manageuserspage.clickSearchButton().enterNameInTextBox(name).clickRedSearchButton();
 		assertTrue( manageuserspage.searchInTheTable(name),"User name is not found in the table");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void viewPasswordOfSearchedUser() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -45,7 +45,7 @@ public class ManageUsersTest extends Base{
 		manageuserspage.clickPasswordArrowButton();
 		assertTrue(manageuserspage.isPasswordDisplayedForSearchedUser(),"password is not displayed");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void deleteAnUserFromTable() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

@@ -16,7 +16,7 @@ public class ManagePaymentTest extends Base{
 	SelectCategoryPage selectcategorypage;
 	ManagePaymentPage managepaymentpage;
 	
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void checkUpdationInManagePaymentMethod() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -30,7 +30,7 @@ public class ManagePaymentTest extends Base{
 		managepaymentpage.clickDebitUpdateButton().changeValueInDebitPayLimitTextBox(amount).clickUpdate();
 		assertTrue(managepaymentpage.isAlertShownWhenUpdationIsDone(),"Updation not done successfully");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void verifyStatusChangeWhenStatusButtonIsClicked() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -43,7 +43,7 @@ public class ManagePaymentTest extends Base{
 		managepaymentpage.clickDebitStatusButton();
 		assertTrue(managepaymentpage.isAlertShownWhenStatusIsChanged(),"Status not changed successfully");
 	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void verifyWorkingOfResetButton_clickReset_RedirectToBackPage() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -55,8 +55,7 @@ public class ManagePaymentTest extends Base{
 		selectcategorypage.SelectCategoryElement(input);	
 		managepaymentpage=new ManagePaymentPage(driver);
 		managepaymentpage.clickDebitUpdateButton().changeValueInDebitPayLimitTextBox(amount).clickResetButton();
-		assertTrue(managepaymentpage.isBackPageShownAfterClickingReset(),"Reset button is not working");
-		
+		assertTrue(managepaymentpage.isBackPageShownAfterClickingReset(),"Reset button is not working");		
 	}
 
 }

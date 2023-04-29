@@ -15,7 +15,7 @@ public class ManagePagesTest extends Base{
 	 LoginPage loginpage;
 	 ManagePagesPages  managepagespages;
 	 
-	 @Test
+	 @Test(retryAnalyzer =Retry.class)
 	 @Parameters({"title"})
 	 public void searchPageUsingTitleFromListPageTable(String title) throws IOException {
 		 String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -27,7 +27,7 @@ public class ManagePagesTest extends Base{
 		 managepagespages.clickSearchButton().enterTitleToSearchInListPages(title).clickRedSearchButton();
 		 assertTrue( managepagespages.isSearchedTitleFoundFromListPagesTable(),"Searched title not found");
 	 }
-	 @Test
+	 @Test(retryAnalyzer =Retry.class)
 	 @Parameters({"update","updatecolor"})
 	 public void updateListPageAfterSearchingFromListPageTable(String update,String updatecolor) throws IOException {
 		 String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -40,7 +40,7 @@ public class ManagePagesTest extends Base{
 		 makeChangesInPageTextBoxToUpdate(updatecolor).clickRedUpdateButton();
 		 assertTrue(managepagespages.isAlertDisplayedAfterUpdation(),"Updation is not successful");
 	 }
-	 @Test
+	 @Test(retryAnalyzer =Retry.class)
 	 public void verifyDuplicatePageCreation() throws IOException {
 		 String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
 	   	 String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -54,7 +54,7 @@ public class ManagePagesTest extends Base{
 		 assertTrue(managepagespages.isAlertDisplayedForDuplicatePage(),"Duplicate page can be added");
 	 
 	 }
-	 @Test
+	 @Test(retryAnalyzer =Retry.class)
 	 @Parameters({"title"})
 	 public void clickResetButtonToGetListPagesTablePage(String title) throws IOException {
 		 String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");

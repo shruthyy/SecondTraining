@@ -74,7 +74,6 @@ public class ManagePagesPages {
 	public boolean isAlertDisplayedAfterUpdation() {
 		return PageUtility.isDisplay(alertAfterUpdation);
 	}
-	
 	public ManagePagesPages clickResetButton() {
 		WaitUtility.waitForClickableByWebElement(driver, resetButton);
 		PageUtility.clickOnElement(resetButton);

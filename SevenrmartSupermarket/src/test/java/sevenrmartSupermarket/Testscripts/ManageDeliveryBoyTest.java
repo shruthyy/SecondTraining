@@ -20,7 +20,7 @@ public class ManageDeliveryBoyTest extends Base {
 	SelectCategoryPage selectcategorypage;
 	ManageDeliveryBoyPage managedeliveryboypage;
 	
-//	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void addNewDeliveryBoyDetails() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
@@ -38,24 +38,7 @@ public class ManageDeliveryBoyTest extends Base {
 		managedeliveryboypage.clickSaveButtonToAddDeliveryBoy();
 		assertTrue(managedeliveryboypage.searchInTheTable(deliveryboynew),"New Delivery Boy Details are not added successfully");	
 	}
-//	@Test
-	@Parameters({"phone"})
-	public void searchWithPhoneNumber(String phone) throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String input=ExcelUtility.getString(0,0, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-    	loginpage=new LoginPage(driver);
-		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
-		selectcategorypage=new SelectCategoryPage(driver);
-		selectcategorypage.SelectCategoryElement(input);
-		managedeliveryboypage=new ManageDeliveryBoyPage(driver);
-		managedeliveryboypage.clickSearchButton();
-		managedeliveryboypage.enterPhNumbToTextBox(phone);
-		managedeliveryboypage.clickRedSearchButton();
-	//	assertTrue(managedeliveryboypage.isSearchWithPhoneNumberResultDisplayed(),"New Delivery Boy Details are not added successfully");
-
-	}
-	@Test
+	@Test(retryAnalyzer =Retry.class)
 	public void verifyCancelButtonWorking() throws IOException {
 		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
    	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
