@@ -12,6 +12,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageUsersPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
 	public ManageUsersPage(WebDriver driver) {
 	this.driver=driver;
@@ -25,32 +26,38 @@ public class ManageUsersPage {
 	@FindBy(xpath="//i[@class='fa fa-angle-double-down']") WebElement showPasswordButton;
 	@FindBy(xpath="//div[@class='profile-info-name']") WebElement passwordDisplayBox;
 	By TableValuesBy=By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
+	
 	public ManageUsersPage clickSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, searchButton);
-		PageUtility.clickOnElement(searchButton);
+		pageutility.clickOnElement(searchButton);
 		return this;
 	}
+	public void popupSelectOk() {
+		driver.switchTo().alert().accept();
+	}
 	public ManageUsersPage enterNameInTextBox(String name) {
-		PageUtility.enterText(nameTextBox, name);
+		WaitUtility.waitForElement(driver, nameTextBox);
+		pageutility.enterText(nameTextBox, name);
 		return this;
 	}
 	public ManageUsersPage clickRedSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, redSearchButton);
-		PageUtility.clickOnElement(redSearchButton);
+		pageutility.clickOnElement(redSearchButton);
 		return this;
 	}
 	public void clickDeleteButton() {
 		WaitUtility.waitForClickableByWebElement(driver, deleteButton);
-		PageUtility.clickOnElement(deleteButton);
+		pageutility.clickOnElement(deleteButton);
 	}
 	public void clickPasswordArrowButton() {
-		PageUtility.clickOnElement(showPasswordButton);
+		WaitUtility.waitForClickableByWebElement(driver, showPasswordButton);
+		pageutility.clickOnElement(showPasswordButton);
 	}
 	public boolean isAlertDisplayedWhenUserIsDEletedFromTable() {
-		return PageUtility.isDisplay(alertWhenUserIsDeleted);
+		return pageutility.isDisplay(alertWhenUserIsDeleted);
 	}
 	public boolean isPasswordDisplayedForSearchedUser() {
-		return PageUtility.isDisplay(passwordDisplayBox);
+		return pageutility.isDisplay(passwordDisplayBox);
 	}
 	public boolean searchInTheTable(String name) {
 		String offercodeText="";
@@ -64,9 +71,7 @@ public class ManageUsersPage {
 		else 
 
 			return false;
-
 		}		
-
 	}
 
 	

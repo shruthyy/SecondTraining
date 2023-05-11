@@ -13,92 +13,86 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageLocationPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
-
 	public ManageLocationPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(xpath = "//a[@type='button']")
-	WebElement cancelButton;
-	@FindBy(xpath = "//div[@class='content-wrapper']")
-	WebElement cancelBackPage;
-	@FindBy(xpath = "//a[@onclick='click_button(2)']")
-	WebElement searchButton;
-	@FindBy(xpath = "//button[@name='Search']")
-	WebElement redSearchButton;
-	@FindBy(xpath = "//section[@class='content']")
-	WebElement listPageAfterReset;
-	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
-	WebElement newButtonLocationAdd;
-	@FindBy(xpath = "//input[@id='location']")
-	WebElement enterTheLocationTextBox;
-	@FindBy(xpath = "//input[@id='delivery']")
-	WebElement enterDeliveryChargeTextBox;
-	@FindBy(xpath = "//button[@type='submit']")
-	WebElement saveButtonToAddLocation;
-	@FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']")
-	WebElement resetButton;
-	@FindBy(xpath = "//input[@placeholder='Enter the Location']")
-	WebElement enterLocationToSearch;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement alertAfterCreatingAddingNewLocation;
-	@FindBy(xpath = "//select[@id='country_id']")
-	WebElement dropDownCountry;
+	@FindBy(xpath = "//a[@type='button']")WebElement cancelButton;
+	@FindBy(xpath = "//div[@class='content-wrapper']")WebElement cancelBackPage;
+	@FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchButton;
+	@FindBy(xpath = "//button[@name='Search']")WebElement redSearchButton;
+	@FindBy(xpath = "//section[@class='content']")WebElement listPageAfterReset;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")WebElement newButtonLocationAdd;
+	@FindBy(xpath = "//input[@id='location']")WebElement enterTheLocationTextBox;
+	@FindBy(xpath = "//input[@id='delivery']")WebElement enterDeliveryChargeTextBox;
+	@FindBy(xpath = "//button[@type='submit']")WebElement saveButtonToAddLocation;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']")WebElement resetButton;
+	@FindBy(xpath = "//input[@placeholder='Enter the Location']")WebElement enterLocationToSearch;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")WebElement alertAfterCreatingAddingNewLocation;
+	@FindBy(xpath = "//select[@id='country_id']")	WebElement dropDownCountry;
+	@FindBy(xpath="//select[@id='st_id']") WebElement dropDownState;
 	By tableValue = By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td");
 
 	public ManageLocationPage clickNewButtonToAddLocation() {
 		WaitUtility.waitForClickableByWebElement(driver, newButtonLocationAdd);
-		PageUtility.clickOnElement(newButtonLocationAdd);
+		pageutility.clickOnElement(newButtonLocationAdd);
 		return this;
 	}
-	public void selectCountryFronDropDown(String country) {
-		PageUtility.selectDropdownbyText(dropDownCountry, country);
+	public ManageLocationPage selectCountryFronDropDown() {
+		WaitUtility.waitForElement(driver, dropDownCountry);
+		pageutility.selectDropdownbyIndex(dropDownCountry, 1);
+		return this;
+	}
+	public ManageLocationPage selectStateFromDropDown() {
+		WaitUtility.waitForElement(driver, dropDownState);
+		pageutility.selectDropdownbyIndex(dropDownState, 10);
+		return this;
 	}
 	public ManageLocationPage enterLocation(String location) {
 		WaitUtility.waitForElement(driver, enterTheLocationTextBox);
-		PageUtility.enterText(enterTheLocationTextBox, location);
+		pageutility.enterText(enterTheLocationTextBox, location);
 		return this;
 	}
 	public ManageLocationPage enterDeliveryCharge(String deliverycharge) {
-		PageUtility.enterText(enterDeliveryChargeTextBox, deliverycharge);
+		pageutility.enterText(enterDeliveryChargeTextBox, deliverycharge);
 		return this;
 	}
 	public ManageLocationPage clickSaveButtonToAddLocation() {
-		PageUtility.clickOnElement(saveButtonToAddLocation);
-		return this;
+		pageutility.clickOnElement(saveButtonToAddLocation);
+	    return this;
 	}
 	public ManageLocationPage clickResetButton() {
-		PageUtility.clickOnElement(resetButton);
-		return this;
+		pageutility.clickOnElement(resetButton);
+	    return this;
 	}
 	public boolean alertForAddingLocation() {
-		return PageUtility.isDisplay(alertAfterCreatingAddingNewLocation);
+		return pageutility.isDisplay(alertAfterCreatingAddingNewLocation);
 	}
 	public ManageLocationPage clickCancelButton() {
 		WaitUtility.waitForClickableByWebElement(driver, cancelButton);
-		PageUtility.clickOnElement(cancelButton);
+		pageutility.clickOnElement(cancelButton);
 		return this;
 	}
 	public boolean listPageShownAfterCancelling() {
-		return PageUtility.isDisplay(cancelBackPage);
+		return pageutility.isDisplay(cancelBackPage);
 	}
 	public ManageLocationPage clickSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, searchButton);
-		PageUtility.clickOnElement(searchButton);
+		pageutility.clickOnElement(searchButton);
 		return this;
 	}
 	public ManageLocationPage clickRedSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, redSearchButton);
-		PageUtility.clickOnElement(redSearchButton);
+		pageutility.clickOnElement(redSearchButton);
 		return this;
 	}
 	public boolean pageShownAfterClickingResetIsDisplayed() {
-		return PageUtility.isDisplay(listPageAfterReset);
+		return pageutility.isDisplay(listPageAfterReset);
 	}
 	public void enterTheLocationToSearchInTable(String expectedData) {
-		PageUtility.enterText(enterLocationToSearch, expectedData);
+		pageutility.enterText(enterLocationToSearch, expectedData);
 	}
 	public boolean searchListLocationTable(String expectedData) throws IOException {
 		int flag = 0;
@@ -110,7 +104,6 @@ public class ManageLocationPage {
 				flag = 1;
 				break;
 			}
-
 		}
 		if (flag == 1)
 			return true;

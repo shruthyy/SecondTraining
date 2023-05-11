@@ -12,11 +12,11 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtility {
-	public static final long IMPLICIT_WAIT = 10;
+	public static final long IMPLICIT_WAIT = 0;
 	public static final long PAGE_LOAD_WAIT = 20;
 	public static final long EXPLICIT_WAIT = 50;
-	public static final long FLUENT_WAIT =10;//Fluent Timeout wait
-	public static final long POLLING_WAIT =5;//Fluent Polling wait
+	public static final long FLUENT_WAIT =10;
+	public static final long POLLING_WAIT =5;
 
 	public static void waitForElement(WebDriver driver, WebElement target) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));

@@ -9,6 +9,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class PushNotificationPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
 	public PushNotificationPage(WebDriver driver) {
 	this.driver=driver;
@@ -21,27 +22,26 @@ public class PushNotificationPage {
 	@FindBy(xpath="//a[@type='button']") WebElement resetButton;
 	@FindBy(xpath="//div[@class='form-group']") WebElement clearedTitleTextBox;
 	public PushNotificationPage enterTitleBox(String title){
-		PageUtility.enterText(titleTextEnter, title);
+		pageutility.enterText(titleTextEnter, title);
 		return this;
 	}	
 	public PushNotificationPage enterDescriptionBox(String description){
-		PageUtility.enterText(descriptionTextEnter, description);
+		pageutility.enterText(descriptionTextEnter, description);
 		return this;
 	}	
 	public PushNotificationPage clickSendButton(){
-		PageUtility.clickOnElement(sendButton);
+		pageutility.clickOnElement(sendButton);
 		return this;
 	}
 	public boolean alertForPushisDisplayed() {
-		return PageUtility.isDisplay(pushNotificationAlert);
+		return pageutility.isDisplay(pushNotificationAlert);
 	}
 	public boolean isTitleBoxClearedAfterClickingResetButton() {
-		return PageUtility.isDisplay(clearedTitleTextBox);
+		return pageutility.isDisplay(clearedTitleTextBox);
 	}
 	public  PushNotificationPage clickResetButton() {
 		WaitUtility.waitForClickableByWebElement(driver, resetButton);
-		PageUtility.clickOnElement(resetButton);
+		pageutility.clickOnElement(resetButton);
 		return this;
 	}
-
 }

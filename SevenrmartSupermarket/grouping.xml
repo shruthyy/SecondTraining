@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite"> 
-	  <groups>
-		  <run>
-			  <include name="smoke"></include>
-		  </run>
-	  </groups>
-  <test thread-count="5" name="Test">
-     <classes>
-	  <parameter name="browser" value="chrome">
-		 <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest">
-			<methods>
-				<include name="addLinkToManageSlider" />
-			</methods>
-		 </class>
-	  </parameter>
-     </classes>
-  </test> <!-- Test -->
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="sevenrmartSupermarket.Testscripts.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<parameter name="browser" value="chrome">
+				<class name="sevenrmartSupermarket.Testscripts.ManageSliderTest"/>
+					
+			</parameter>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

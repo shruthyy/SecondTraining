@@ -12,6 +12,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageCategoryPage {
+	PageUtility pageutility=new PageUtility();;
 	public WebDriver driver;
 	public ManageCategoryPage (WebDriver driver) {
 	this.driver=driver;
@@ -28,31 +29,31 @@ public class ManageCategoryPage {
 	
 	public ManageCategoryPage clickCategoryMoreInfoButton() {
 		WaitUtility.waitForClickableByWebElement(driver, selectCategoryElement);
-		PageUtility.clickOnElement(selectCategoryElement);
+		pageutility.clickOnElement(selectCategoryElement);
 		return this;
 	}
 	public ManageCategoryPage clickSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, searchButton);
-		PageUtility.clickOnElement(searchButton);
+		pageutility.clickOnElement(searchButton);
 		return this;
 	}
 	public ManageCategoryPage enterCategoryToTextBoxForSearching(String category) {
 		WaitUtility.waitForElement(driver, categoryTextBox);
-		PageUtility.enterText(categoryTextBox, category);
+		pageutility.enterText(categoryTextBox, category);
 		return this;
 	}
 	public ManageCategoryPage clickRedSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver,redSearchButton );
-		PageUtility.clickOnElement(redSearchButton);
+		pageutility.clickOnElement(redSearchButton);
 		return this;
 	}
 	public ManageCategoryPage clickResetButton() {
 		WaitUtility.waitForClickableByWebElement(driver,resetButton );
-		PageUtility.clickOnElement(resetButton);
+		pageutility.clickOnElement(resetButton);
 		return this;
 	}
 	public boolean isListCategoryPageDisplayedAfterClickingResetButton() {
-		return PageUtility.isDisplay(listCategoryDisplayAfterReset);
+		return pageutility.isDisplay(listCategoryDisplayAfterReset);
 	}
 	public boolean searchInTheTable(String category) {
 		String categoryText="";
@@ -66,6 +67,5 @@ public class ManageCategoryPage {
 		else 
 
 			return false;
-
 		}		
 }

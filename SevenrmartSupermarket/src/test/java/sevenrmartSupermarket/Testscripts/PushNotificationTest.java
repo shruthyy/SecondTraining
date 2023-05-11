@@ -7,7 +7,9 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import Utilities.ExcelUtility;
-import Utilities.FakerUtility;
+import Utilities.GeneralUtility;
+import Utilities.RandomDataUtility;
+import retry.Retry;
 import sevenrmartSupermarket.Pages.LoginPage;
 import sevenrmartSupermarket.Pages.PushNotificationPage;
 import sevenrmartSupermarket.Pages.SelectCategoryPage;
@@ -17,33 +19,34 @@ public class PushNotificationTest extends Base{
 	LoginPage loginpage;
 	SelectCategoryPage selectcategorypage;
 	
-	@Test(retryAnalyzer =Retry.class)
-	public void sentPushNotification() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-		String input=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
-		String title=FakerUtility.titleName();
-		String description=FakerUtility.descriptionName();
+	
+	@Test(priority=2,retryAnalyzer =Retry.class)
+	public void verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton() throws IOException {
+		String userName=ExcelUtility.getString(0,0,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String password=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"LoginPage");
+		String input=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"SelectCategory");
+		String title=RandomDataUtility.titleName();
+		String description=RandomDataUtility.descriptionName();
 		loginpage=new  LoginPage(driver);
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		selectcategorypage=new SelectCategoryPage(driver);
 		selectcategorypage.SelectCategoryElement(input);
 		pushnotificationpage=new PushNotificationPage(driver);
 		pushnotificationpage.enterTitleBox(title).enterDescriptionBox(description).clickSendButton();
-		assertTrue(pushnotificationpage.alertForPushisDisplayed(),"Push Message is not sent successfully");
+		assertTrue(pushnotificationpage.alertForPushisDisplayed(),"Push Message Alert is not Displayed");
 	}
-	@Test(retryAnalyzer =Retry.class)
-	public void verifyClickingResetButtonToGetTitleBoxCleared() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-		String input=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"SelectCategory");
-		String title=FakerUtility.titleName();
+	@Test(priority=1,retryAnalyzer =Retry.class)
+	public void verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle() throws IOException {
+		String userName=ExcelUtility.getString(0,0,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String password=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"LoginPage");
+		String input=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"SelectCategory");
+		String title=RandomDataUtility.titleName();
 		loginpage=new  LoginPage(driver);
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		selectcategorypage=new SelectCategoryPage(driver);
 		selectcategorypage.SelectCategoryElement(input);
 		pushnotificationpage=new PushNotificationPage(driver);
 		pushnotificationpage.enterTitleBox(title).clickResetButton();
-		assertTrue(pushnotificationpage.isTitleBoxClearedAfterClickingResetButton(),"Reset button not working");
+		assertTrue(pushnotificationpage.isTitleBoxClearedAfterClickingResetButton(),"TitleBox is not cleared after reseting");
 	}
 }

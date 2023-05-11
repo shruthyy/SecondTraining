@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
                     <span>C:\Users\PROJECTS\eclipse-workspace\SevenrmartSupermarket\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods,   28 passed</span>
+                    <span class="method-stats">34 methods,  1 skipped,  33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageCategoryTest" hash-for-method="verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,143 +117,168 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" class="method navigator-link" hash-for-method="addLinkToManageSlider">addLinkToManageSlider</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" hash-for-method="veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage">veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" class="method navigator-link" hash-for-method="addNewLocationToManageLocation">addNewLocationToManageLocation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" hash-for-method="verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox(TRYNEW20)">verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox(TRYNEW20)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" class="method navigator-link" hash-for-method="addNewOfferCode">addNewOfferCode</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" hash-for-method="verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider">verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" class="method navigator-link" hash-for-method="cancelInManageLocation">cancelInManageLocation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" hash-for-method="verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage">verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.HomeTest" class="method navigator-link" hash-for-method="checkSiteNameIsDisplayedInHomePage">checkSiteNameIsDisplayedInHomePage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" hash-for-method="verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails">verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" class="method navigator-link" hash-for-method="checkUpdationInManagePaymentMethod">checkUpdationInManagePaymentMethod</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" hash-for-method="verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton">verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="clickResetButtonToGetListPagesTablePage(Papaw)">clickResetButtonToGetListPagesTablePage(Papaw)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" hash-for-method="verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable">verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" class="method navigator-link" hash-for-method="getNewButtonBackgroundColor">getNewButtonBackgroundColor</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageUsersTest" hash-for-method="verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable">verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.HomeTest" class="method navigator-link" hash-for-method="isCopyRightMessageDisplayedAsFooter">isCopyRightMessageDisplayedAsFooter</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" hash-for-method="verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved">verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" class="method navigator-link" hash-for-method="resetInManageLocation">resetInManageLocation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" hash-for-method="verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated(kite, color)">verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated(kite, color)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageCategoryTest" class="method navigator-link" hash-for-method="searchFromListCategoryTable">searchFromListCategoryTable</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.PushNotificationTest" hash-for-method="verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton">verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" class="method navigator-link" hash-for-method="searchFromListLocationTableToFindLocation">searchFromListLocationTableToFindLocation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" hash-for-method="verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails">verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="searchPageUsingTitleFromListPageTable(Papaw)">searchPageUsingTitleFromListPageTable(Papaw)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" hash-for-method="verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton">verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageUsersTest" class="method navigator-link" hash-for-method="searchUserFromListUsersTable">searchUserFromListUsersTable</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.HomeTest" hash-for-method="verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage">verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.PushNotificationTest" class="method navigator-link" hash-for-method="sentPushNotification">sentPushNotification</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" hash-for-method="verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage(Papaw)">verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage(Papaw)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="updateListPageAfterSearchingFromListPageTable(kite, color)">updateListPageAfterSearchingFromListPageTable(kite, color)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" hash-for-method="verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton">verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" class="method navigator-link" hash-for-method="veriftClickingHomeButtonFromListSliderPage">veriftClickingHomeButtonFromListSliderPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.LoginTest" hash-for-method="verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword(admin, admin)">verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyCancelButtonWorking">verifyCancelButtonWorking</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageCategoryTest" hash-for-method="verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox">verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" class="method navigator-link" hash-for-method="verifyClickingCancelButtonToGetListSlidersListPage">verifyClickingCancelButtonToGetListSlidersListPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest" hash-for-method="verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName">verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.PushNotificationTest" class="method navigator-link" hash-for-method="verifyClickingResetButtonToGetTitleBoxCleared">verifyClickingResetButtonToGetTitleBoxCleared</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" hash-for-method="verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails">verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyClickingResetButtonToGoToListCategoryPage">verifyClickingResetButtonToGoToListCategoryPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" hash-for-method="verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails">verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" class="method navigator-link" hash-for-method="verifyDuplicatePageCreation">verifyDuplicatePageCreation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.LoginTest" hash-for-method="verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage">verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.LoginTest" class="method navigator-link" hash-for-method="verifyLogout_whenLogOutButtonIsClickedFromHomePage">verifyLogout_whenLogOutButtonIsClickedFromHomePage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest" hash-for-method="verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails">verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" class="method navigator-link" hash-for-method="verifyResetButtonToStartNewSearch(TRYNEW20)">verifyResetButtonToStartNewSearch(TRYNEW20)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageUsersTest" hash-for-method="verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable">verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" class="method navigator-link" hash-for-method="verifyWorkingOfResetButton_clickReset_RedirectToBackPage">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageLocationTest" hash-for-method="verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails">verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.LoginTest" class="method navigator-link" hash-for-method="verify_login_with_Credentials(admin, admin)">verify_login_with_Credentials(admin, admin)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" hash-for-method="verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox(TRYNEW20)">verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox(TRYNEW20)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageOfferCodeTest" class="method navigator-link" hash-for-method="verify_seraching_With_Offercode_Shows_Corressponding_Details(TRYNEW20)">verify_seraching_With_Offercode_Shows_Corressponding_Details(TRYNEW20)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.HomeTest" hash-for-method="verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText">verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageUsersTest" class="method navigator-link" hash-for-method="viewPasswordOfSearchedUser">viewPasswordOfSearchedUser</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.PushNotificationTest" hash-for-method="verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle">verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageCategoryTest" hash-for-method="verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageUsersTest" hash-for-method="verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName">verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePagesTest" hash-for-method="verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton(Papaw)">verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton(Papaw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManageSliderTest" hash-for-method="verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox">verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sevenrmartSupermarket.Testscripts.ManagePaymentTest" hash-for-method="verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset">verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -254,125 +293,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.ManagePagesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickResetButtonToGetListPagesTablePage(Papaw)">
-                  </a> <!-- clickResetButtonToGetListPagesTablePage(Papaw) -->
-                  <span class="method-name">clickResetButtonToGetListPagesTablePage</span>
-                  <span class="parameters">(Papaw)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchPageUsingTitleFromListPageTable(Papaw)">
-                  </a> <!-- searchPageUsingTitleFromListPageTable(Papaw) -->
-                  <span class="method-name">searchPageUsingTitleFromListPageTable</span>
-                  <span class="parameters">(Papaw)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateListPageAfterSearchingFromListPageTable(kite, color)">
-                  </a> <!-- updateListPageAfterSearchingFromListPageTable(kite, color) -->
-                  <span class="method-name">updateListPageAfterSearchingFromListPageTable</span>
-                  <span class="parameters">(kite, color)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDuplicatePageCreation">
-                  </a> <!-- verifyDuplicatePageCreation -->
-                  <span class="method-name">verifyDuplicatePageCreation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.PushNotificationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="sentPushNotification">
-                  </a> <!-- sentPushNotification -->
-                  <span class="method-name">sentPushNotification</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyClickingResetButtonToGetTitleBoxCleared">
-                  </a> <!-- verifyClickingResetButtonToGetTitleBoxCleared -->
-                  <span class="method-name">verifyClickingResetButtonToGetTitleBoxCleared</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">sevenrmartSupermarket.Testscripts.ManageCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchFromListCategoryTable">
-                  </a> <!-- searchFromListCategoryTable -->
-                  <span class="method-name">searchFromListCategoryTable</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyClickingResetButtonToGoToListCategoryPage">
-                  </a> <!-- verifyClickingResetButtonToGoToListCategoryPage -->
-                  <span class="method-name">verifyClickingResetButtonToGoToListCategoryPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.ManageSliderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addLinkToManageSlider">
-                  </a> <!-- addLinkToManageSlider -->
-                  <span class="method-name">addLinkToManageSlider</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getNewButtonBackgroundColor">
-                  </a> <!-- getNewButtonBackgroundColor -->
-                  <span class="method-name">getNewButtonBackgroundColor</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="veriftClickingHomeButtonFromListSliderPage">
-                  </a> <!-- veriftClickingHomeButtonFromListSliderPage -->
-                  <span class="method-name">veriftClickingHomeButtonFromListSliderPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyClickingCancelButtonToGetListSlidersListPage">
-                  </a> <!-- verifyClickingCancelButtonToGetListSlidersListPage -->
-                  <span class="method-name">verifyClickingCancelButtonToGetListSlidersListPage</span>
+                  <a name="verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox">
+                  </a> <!-- verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox -->
+                  <span class="method-name">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1396ea6bc8626c07ad4e99519e72f14e, clickElement {id=f71f461e-0aa0-4ef5-9404-0344570572a2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROJECTS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49521}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49521/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1396ea6bc8626c07ad4e99519e72f14e)] -&gt; xpath: //button[@name=&apos;Search&apos;]]
+Session ID: 1396ea6bc8626c07ad4e99519e72f14e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at Utilities.PageUtility.clickOnElement(PageUtility.java:56)
+	at sevenrmartSupermarket.Pages.ManageCategoryPage.clickRedSearchButton(ManageCategoryPage.java:47)
+	at sevenrmartSupermarket.Testscripts.ManageCategoryTest.verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox(ManageCategoryTest.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -381,31 +343,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCancelButtonWorking">
-                  </a> <!-- verifyCancelButtonWorking -->
-                  <span class="method-name">verifyCancelButtonWorking</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.ManageUsersTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchUserFromListUsersTable">
-                  </a> <!-- searchUserFromListUsersTable -->
-                  <span class="method-name">searchUserFromListUsersTable</span>
+                  <a name="verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName">
+                  </a> <!-- verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName -->
+                  <span class="method-name">verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="viewPasswordOfSearchedUser">
-                  </a> <!-- viewPasswordOfSearchedUser -->
-                  <span class="method-name">viewPasswordOfSearchedUser</span>
+                  <a name="verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails">
+                  </a> <!-- verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails -->
+                  <span class="method-name">verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -418,16 +365,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkUpdationInManagePaymentMethod">
-                  </a> <!-- checkUpdationInManagePaymentMethod -->
-                  <span class="method-name">checkUpdationInManagePaymentMethod</span>
+                  <a name="verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton">
+                  </a> <!-- verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton -->
+                  <span class="method-name">verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWorkingOfResetButton_clickReset_RedirectToBackPage">
-                  </a> <!-- verifyWorkingOfResetButton_clickReset_RedirectToBackPage -->
-                  <span class="method-name">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</span>
+                  <a name="verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable">
+                  </a> <!-- verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable -->
+                  <span class="method-name">verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset">
+                  </a> <!-- verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset -->
+                  <span class="method-name">verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -435,21 +389,64 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">sevenrmartSupermarket.Testscripts.HomeTest</span>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.PushNotificationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkSiteNameIsDisplayedInHomePage">
-                  </a> <!-- checkSiteNameIsDisplayedInHomePage -->
-                  <span class="method-name">checkSiteNameIsDisplayedInHomePage</span>
+                  <a name="verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton">
+                  </a> <!-- verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton -->
+                  <span class="method-name">verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="isCopyRightMessageDisplayedAsFooter">
-                  </a> <!-- isCopyRightMessageDisplayedAsFooter -->
-                  <span class="method-name">isCopyRightMessageDisplayedAsFooter</span>
+                  <a name="verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle">
+                  </a> <!-- verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle -->
+                  <span class="method-name">verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.ManageSliderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage">
+                  </a> <!-- veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage -->
+                  <span class="method-name">veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider">
+                  </a> <!-- verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider -->
+                  <span class="method-name">verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved">
+                  </a> <!-- verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved -->
+                  <span class="method-name">verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton">
+                  </a> <!-- verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton -->
+                  <span class="method-name">verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox">
+                  </a> <!-- verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox -->
+                  <span class="method-name">verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -462,17 +459,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogout_whenLogOutButtonIsClickedFromHomePage">
-                  </a> <!-- verifyLogout_whenLogOutButtonIsClickedFromHomePage -->
-                  <span class="method-name">verifyLogout_whenLogOutButtonIsClickedFromHomePage</span>
+                  <a name="verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword(admin, admin)">
+                  </a> <!-- verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword(admin, admin) -->
+                  <span class="method-name">verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword</span>
+                  <span class="parameters">(admin, admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_login_with_Credentials(admin, admin)">
-                  </a> <!-- verify_login_with_Credentials(admin, admin) -->
-                  <span class="method-name">verify_login_with_Credentials</span>
-                  <span class="parameters">(admin, admin)</span>
+                  <a name="verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage">
+                  </a> <!-- verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage -->
+                  <span class="method-name">verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -485,30 +482,103 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewLocationToManageLocation">
-                  </a> <!-- addNewLocationToManageLocation -->
-                  <span class="method-name">addNewLocationToManageLocation</span>
+                  <a name="verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails">
+                  </a> <!-- verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails -->
+                  <span class="method-name">verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="cancelInManageLocation">
-                  </a> <!-- cancelInManageLocation -->
-                  <span class="method-name">cancelInManageLocation</span>
+                  <a name="verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails">
+                  </a> <!-- verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails -->
+                  <span class="method-name">verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="resetInManageLocation">
-                  </a> <!-- resetInManageLocation -->
-                  <span class="method-name">resetInManageLocation</span>
+                  <a name="verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails">
+                  </a> <!-- verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails -->
+                  <span class="method-name">verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchFromListLocationTableToFindLocation">
-                  </a> <!-- searchFromListLocationTableToFindLocation -->
-                  <span class="method-name">searchFromListLocationTableToFindLocation</span>
+                  <a name="verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails">
+                  </a> <!-- verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails -->
+                  <span class="method-name">verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage">
+                  </a> <!-- verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage -->
+                  <span class="method-name">verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText">
+                  </a> <!-- verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText -->
+                  <span class="method-name">verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.ManageUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable">
+                  </a> <!-- verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable -->
+                  <span class="method-name">verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable">
+                  </a> <!-- verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable -->
+                  <span class="method-name">verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName">
+                  </a> <!-- verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName -->
+                  <span class="method-name">verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox">
+                  </a> <!-- verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox -->
+                  <span class="method-name">verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox">
+                  </a> <!-- verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox -->
+                  <span class="method-name">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -521,25 +591,71 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewOfferCode">
-                  </a> <!-- addNewOfferCode -->
-                  <span class="method-name">addNewOfferCode</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyResetButtonToStartNewSearch(TRYNEW20)">
-                  </a> <!-- verifyResetButtonToStartNewSearch(TRYNEW20) -->
-                  <span class="method-name">verifyResetButtonToStartNewSearch</span>
+                  <a name="verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox(TRYNEW20)">
+                  </a> <!-- verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox(TRYNEW20) -->
+                  <span class="method-name">verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox</span>
                   <span class="parameters">(TRYNEW20)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_seraching_With_Offercode_Shows_Corressponding_Details(TRYNEW20)">
-                  </a> <!-- verify_seraching_With_Offercode_Shows_Corressponding_Details(TRYNEW20) -->
-                  <span class="method-name">verify_seraching_With_Offercode_Shows_Corressponding_Details</span>
+                  <a name="verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage">
+                  </a> <!-- verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage -->
+                  <span class="method-name">verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails">
+                  </a> <!-- verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails -->
+                  <span class="method-name">verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox(TRYNEW20)">
+                  </a> <!-- verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox(TRYNEW20) -->
+                  <span class="method-name">verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox</span>
                   <span class="parameters">(TRYNEW20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevenrmartSupermarket.Testscripts.ManagePagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated(kite, color)">
+                  </a> <!-- verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated(kite, color) -->
+                  <span class="method-name">verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated</span>
+                  <span class="parameters">(kite, color)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage(Papaw)">
+                  </a> <!-- verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage(Papaw) -->
+                  <span class="method-name">verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage</span>
+                  <span class="parameters">(Papaw)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton">
+                  </a> <!-- verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton -->
+                  <span class="method-name">verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton(Papaw)">
+                  </a> <!-- verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton(Papaw) -->
+                  <span class="method-name">verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton</span>
+                  <span class="parameters">(Papaw)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -553,7 +669,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;updatecolor&quot; value=&quot;color&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;offercode&quot; value=&quot;TRYNEW20&quot;/&gt;
@@ -564,17 +680,17 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageUsersTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageOfferCodeTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.PushNotificationTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageCategoryTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.LoginTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.HomeTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManagePaymentTest&quot;/&gt;
       &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageSliderTest&quot;/&gt;
-      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageLocationTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageUsersTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.PushNotificationTest&quot;/&gt;
       &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManagePagesTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManagePaymentTest&quot;/&gt;
       &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageLocationTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.HomeTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.LoginTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageCategoryTest&quot;/&gt;
+      &lt;class name=&quot;sevenrmartSupermarket.Testscripts.ManageOfferCodeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -602,11 +718,11 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">addLinkToManageSlider</span>
+                <span class="method-in-group-name">veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">veriftClickingHomeButtonFromListSliderPage</span>
+                <span class="method-in-group-name">verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -626,124 +742,148 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(34);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addNewLocationToManageLocation')
-data.setCell(0, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
-data.setCell(0, 3, 18581);
+data.setCell(0, 1, 'verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox')
+data.setCell(0, 2, 'sevenrmartSupermarket.Testscripts.ManageCategoryTest')
+data.setCell(0, 3, 14704);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyClickingResetButtonToGetTitleBoxCleared')
-data.setCell(1, 2, 'sevenrmartSupermarket.Testscripts.PushNotificationTest')
-data.setCell(1, 3, 15014);
+data.setCell(1, 1, 'verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox')
+data.setCell(1, 2, 'sevenrmartSupermarket.Testscripts.ManageCategoryTest')
+data.setCell(1, 3, 11983);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_login_with_Credentials')
-data.setCell(2, 2, 'sevenrmartSupermarket.Testscripts.LoginTest')
-data.setCell(2, 3, 12258);
+data.setCell(2, 1, 'verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails')
+data.setCell(2, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
+data.setCell(2, 3, 9548);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'sentPushNotification')
-data.setCell(3, 2, 'sevenrmartSupermarket.Testscripts.PushNotificationTest')
-data.setCell(3, 3, 10746);
+data.setCell(3, 1, 'verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails')
+data.setCell(3, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
+data.setCell(3, 3, 6984);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'cancelInManageLocation')
-data.setCell(4, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
-data.setCell(4, 3, 9234);
+data.setCell(4, 1, 'verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage')
+data.setCell(4, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
+data.setCell(4, 3, 6943);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addLinkToManageSlider')
-data.setCell(5, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
-data.setCell(5, 3, 8929);
+data.setCell(5, 1, 'verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails')
+data.setCell(5, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
+data.setCell(5, 3, 6430);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLogout_whenLogOutButtonIsClickedFromHomePage')
-data.setCell(6, 2, 'sevenrmartSupermarket.Testscripts.LoginTest')
-data.setCell(6, 3, 8406);
+data.setCell(6, 1, 'verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails')
+data.setCell(6, 2, 'sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest')
+data.setCell(6, 3, 6084);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verify_seraching_With_Offercode_Shows_Corressponding_Details')
-data.setCell(7, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
-data.setCell(7, 3, 8184);
+data.setCell(7, 1, 'verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton')
+data.setCell(7, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(7, 3, 6041);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyClickingCancelButtonToGetListSlidersListPage')
-data.setCell(8, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
-data.setCell(8, 3, 7766);
+data.setCell(8, 1, 'verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails')
+data.setCell(8, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
+data.setCell(8, 3, 6020);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyResetButtonToStartNewSearch')
-data.setCell(9, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
-data.setCell(9, 3, 7644);
+data.setCell(9, 1, 'verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton')
+data.setCell(9, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
+data.setCell(9, 3, 6006);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'searchPageUsingTitleFromListPageTable')
-data.setCell(10, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
-data.setCell(10, 3, 7174);
+data.setCell(10, 1, 'verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox')
+data.setCell(10, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
+data.setCell(10, 3, 5644);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyCancelButtonWorking')
-data.setCell(11, 2, 'sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest')
-data.setCell(11, 3, 6567);
+data.setCell(11, 1, 'verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset')
+data.setCell(11, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
+data.setCell(11, 3, 5291);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'updateListPageAfterSearchingFromListPageTable')
-data.setCell(12, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
-data.setCell(12, 3, 6103);
+data.setCell(12, 1, 'verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName')
+data.setCell(12, 2, 'sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest')
+data.setCell(12, 3, 5244);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyWorkingOfResetButton_clickReset_RedirectToBackPage')
+data.setCell(13, 1, 'verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable')
 data.setCell(13, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
-data.setCell(13, 3, 5768);
+data.setCell(13, 3, 5033);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickResetButtonToGetListPagesTablePage')
-data.setCell(14, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
-data.setCell(14, 3, 5614);
+data.setCell(14, 1, 'verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved')
+data.setCell(14, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
+data.setCell(14, 3, 4689);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'searchFromListLocationTableToFindLocation')
+data.setCell(15, 1, 'verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails')
 data.setCell(15, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
-data.setCell(15, 3, 5220);
+data.setCell(15, 3, 4660);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'veriftClickingHomeButtonFromListSliderPage')
-data.setCell(16, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
-data.setCell(16, 3, 5059);
+data.setCell(16, 1, 'verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox')
+data.setCell(16, 2, 'sevenrmartSupermarket.Testscripts.ManageCategoryTest')
+data.setCell(16, 3, 4560);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'checkUpdationInManagePaymentMethod')
-data.setCell(17, 2, 'sevenrmartSupermarket.Testscripts.ManagePaymentTest')
-data.setCell(17, 3, 4957);
+data.setCell(17, 1, 'verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable')
+data.setCell(17, 2, 'sevenrmartSupermarket.Testscripts.ManageUsersTest')
+data.setCell(17, 3, 4529);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'resetInManageLocation')
-data.setCell(18, 2, 'sevenrmartSupermarket.Testscripts.ManageLocationTest')
-data.setCell(18, 3, 4595);
+data.setCell(18, 1, 'verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox')
+data.setCell(18, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
+data.setCell(18, 3, 4448);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyDuplicatePageCreation')
-data.setCell(19, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
-data.setCell(19, 3, 4530);
+data.setCell(19, 1, 'verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton')
+data.setCell(19, 2, 'sevenrmartSupermarket.Testscripts.PushNotificationTest')
+data.setCell(19, 3, 4325);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'getNewButtonBackgroundColor')
-data.setCell(20, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
-data.setCell(20, 3, 4374);
+data.setCell(20, 1, 'verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage')
+data.setCell(20, 2, 'sevenrmartSupermarket.Testscripts.LoginTest')
+data.setCell(20, 3, 4176);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'checkSiteNameIsDisplayedInHomePage')
-data.setCell(21, 2, 'sevenrmartSupermarket.Testscripts.HomeTest')
-data.setCell(21, 3, 4331);
+data.setCell(21, 1, 'verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox')
+data.setCell(21, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
+data.setCell(21, 3, 3953);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'addNewOfferCode')
-data.setCell(22, 2, 'sevenrmartSupermarket.Testscripts.ManageOfferCodeTest')
-data.setCell(22, 3, 3969);
+data.setCell(22, 1, 'verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider')
+data.setCell(22, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
+data.setCell(22, 3, 3908);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'searchFromListCategoryTable')
-data.setCell(23, 2, 'sevenrmartSupermarket.Testscripts.ManageCategoryTest')
-data.setCell(23, 3, 3741);
+data.setCell(23, 1, 'verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated')
+data.setCell(23, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(23, 3, 3906);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'isCopyRightMessageDisplayedAsFooter')
-data.setCell(24, 2, 'sevenrmartSupermarket.Testscripts.HomeTest')
-data.setCell(24, 3, 3056);
+data.setCell(24, 1, 'veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage')
+data.setCell(24, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
+data.setCell(24, 3, 3808);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'verifyClickingResetButtonToGoToListCategoryPage')
-data.setCell(25, 2, 'sevenrmartSupermarket.Testscripts.ManageCategoryTest')
-data.setCell(25, 3, 2932);
+data.setCell(25, 1, 'verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage')
+data.setCell(25, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(25, 3, 3659);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'searchUserFromListUsersTable')
-data.setCell(26, 2, 'sevenrmartSupermarket.Testscripts.ManageUsersTest')
-data.setCell(26, 3, 2422);
+data.setCell(26, 1, 'verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle')
+data.setCell(26, 2, 'sevenrmartSupermarket.Testscripts.PushNotificationTest')
+data.setCell(26, 3, 3604);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'viewPasswordOfSearchedUser')
+data.setCell(27, 1, 'verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable')
 data.setCell(27, 2, 'sevenrmartSupermarket.Testscripts.ManageUsersTest')
-data.setCell(27, 3, 2220);
+data.setCell(27, 3, 3477);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton')
+data.setCell(28, 2, 'sevenrmartSupermarket.Testscripts.ManagePagesTest')
+data.setCell(28, 3, 2985);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName')
+data.setCell(29, 2, 'sevenrmartSupermarket.Testscripts.ManageUsersTest')
+data.setCell(29, 3, 2884);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText')
+data.setCell(30, 2, 'sevenrmartSupermarket.Testscripts.HomeTest')
+data.setCell(30, 3, 2456);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton')
+data.setCell(31, 2, 'sevenrmartSupermarket.Testscripts.ManageSliderTest')
+data.setCell(31, 3, 2235);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword')
+data.setCell(32, 2, 'sevenrmartSupermarket.Testscripts.LoginTest')
+data.setCell(32, 3, 2214);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage')
+data.setCell(33, 2, 'sevenrmartSupermarket.Testscripts.HomeTest')
+data.setCell(33, 3, 1905);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -769,372 +909,444 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageSliderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchUserFromListUsersTable</span>
-                <span class="method-start">5411 ms</span>
+                <span class="method-name">veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage</span>
+                <span class="method-start">7811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=searchUserFromListUsersTable status=SUCCESS method=ManageUsersTest.searchUserFromLi...)</span>
-                <span class="method-start">7838 ms</span>
+                <span class="method-name">browserQuit([TestResult name=veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage status=SUCCESS met...)</span>
+                <span class="method-start">11620 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">8093 ms</span>
+                <span class="method-start">12454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">viewPasswordOfSearchedUser</span>
-                <span class="method-start">10605 ms</span>
+                <span class="method-name">verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider</span>
+                <span class="method-start">16825 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=viewPasswordOfSearchedUser status=SUCCESS method=ManageUsersTest.viewPasswordOfSear...)</span>
-                <span class="method-start">12827 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUplo...)</span>
+                <span class="method-start">20734 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">21741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved</span>
+                <span class="method-start">27078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayed_WhenNewButtonIsClickedAnd_linkIsEnteredAndSaved status=SUCCE...)</span>
+                <span class="method-start">31770 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">33080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton</span>
+                <span class="method-start">38038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyBackgroundcolorIsAsExpected_ByGettingCssValueOfNewButton status=SUCCESS metho...)</span>
+                <span class="method-start">40274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">41088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInLinkTextBox</span>
+                <span class="method-start">47439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToViewListSlidersPage_WhenCancelButtonIsClickedAfterEnteringLinkInL...)</span>
+                <span class="method-start">51393 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">13085 ms</span>
+                <span class="method-start">52384 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addNewOfferCode</span>
-                <span class="method-start">15545 ms</span>
+                <span class="method-name">verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTable</span>
+                <span class="method-start">57816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=addNewOfferCode status=SUCCESS method=ManageOfferCodeTest.addNewOfferCode()[pri:0, ...)</span>
-                <span class="method-start">19515 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayed_WhenDeleteButtonIsClickedAfterSearchingAnUserFromListUsersTa...)</span>
+                <span class="method-start">62347 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">19760 ms</span>
+                <span class="method-start">63370 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyResetButtonToStartNewSearch(TRYNEW20)</span>
-                <span class="method-start">24906 ms</span>
+                <span class="method-name">verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromListUsersTable</span>
+                <span class="method-start">69046 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyResetButtonToStartNewSearch status=SUCCESS method=ManageOfferCodeTest.verifyR...)</span>
-                <span class="method-start">32551 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyPasswordOfSearchedUserIsDisplayed_ByClickingPasswordViewButtonOfTheUserFromLi...)</span>
+                <span class="method-start">72524 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">32873 ms</span>
+                <span class="method-start">73436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_seraching_With_Offercode_Shows_Corressponding_Details(TRYNEW20)</span>
-                <span class="method-start">44980 ms</span>
+                <span class="method-name">verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAndEnteringTheName</span>
+                <span class="method-start">79009 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_seraching_With_Offercode_Shows_Corressponding_Details status=SUCCESS method=...)</span>
-                <span class="method-start">53164 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToGetTheSearchedUserInfoFromListUsersTable_ByClickingSearchButtonAn...)</span>
+                <span class="method-start">81895 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.PushNotificationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">53469 ms</span>
+                <span class="method-start">82815 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sentPushNotification</span>
-                <span class="method-start">83701 ms</span>
+                <span class="method-name">verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle</span>
+                <span class="method-start">89388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=sentPushNotification status=SUCCESS method=PushNotificationTest.sentPushNotificatio...)</span>
-                <span class="method-start">94448 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyTitleBoxGetsClearedByClickingResetButtonAfterEnteringTheTitle status=SUCCESS ...)</span>
+                <span class="method-start">92993 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">94838 ms</span>
+                <span class="method-start">93823 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyClickingResetButtonToGetTitleBoxCleared</span>
-                <span class="method-start">112531 ms</span>
+                <span class="method-name">verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescriptionAndClickingSendButton</span>
+                <span class="method-start">99987 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyClickingResetButtonToGetTitleBoxCleared status=SUCCESS method=PushNotificatio...)</span>
-                <span class="method-start">127547 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageCategoryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">128007 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchFromListCategoryTable</span>
-                <span class="method-start">132811 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=searchFromListCategoryTable status=SUCCESS method=ManageCategoryTest.searchFromList...)</span>
-                <span class="method-start">136554 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">137015 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyClickingResetButtonToGoToListCategoryPage</span>
-                <span class="method-start">143201 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyClickingResetButtonToGoToListCategoryPage status=SUCCESS method=ManageCategor...)</span>
-                <span class="method-start">146135 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">146755 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLogout_whenLogOutButtonIsClickedFromHomePage</span>
-                <span class="method-start">153581 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyLogout_whenLogOutButtonIsClickedFromHomePage status=SUCCESS method=LoginTest....)</span>
-                <span class="method-start">161987 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">162382 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_login_with_Credentials(admin, admin)</span>
-                <span class="method-start">179991 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_login_with_Credentials status=SUCCESS method=LoginTest.verify_login_with_Cre...)</span>
-                <span class="method-start">192250 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.HomeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">192568 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkSiteNameIsDisplayedInHomePage</span>
-                <span class="method-start">221108 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=checkSiteNameIsDisplayedInHomePage status=SUCCESS method=HomeTest.checkSiteNameIsDi...)</span>
-                <span class="method-start">225440 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">225838 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">isCopyRightMessageDisplayedAsFooter</span>
-                <span class="method-start">237697 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=isCopyRightMessageDisplayedAsFooter status=SUCCESS method=HomeTest.isCopyRightMessa...)</span>
-                <span class="method-start">240754 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManagePaymentTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">241131 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkUpdationInManagePaymentMethod</span>
-                <span class="method-start">248340 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=checkUpdationInManagePaymentMethod status=SUCCESS method=ManagePaymentTest.checkUpd...)</span>
-                <span class="method-start">253298 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">253641 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyWorkingOfResetButton_clickReset_RedirectToBackPage</span>
-                <span class="method-start">260363 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyWorkingOfResetButton_clickReset_RedirectToBackPage status=SUCCESS method=Mana...)</span>
-                <span class="method-start">266131 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageSliderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">266446 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addLinkToManageSlider</span>
-                <span class="method-start">281640 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=addLinkToManageSlider status=SUCCESS method=ManageSliderTest.addLinkToManageSlider(...)</span>
-                <span class="method-start">290570 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">291075 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getNewButtonBackgroundColor</span>
-                <span class="method-start">297053 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=getNewButtonBackgroundColor status=SUCCESS method=ManageSliderTest.getNewButtonBack...)</span>
-                <span class="method-start">301428 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">302090 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">veriftClickingHomeButtonFromListSliderPage</span>
-                <span class="method-start">310790 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=veriftClickingHomeButtonFromListSliderPage status=SUCCESS method=ManageSliderTest.v...)</span>
-                <span class="method-start">315850 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">316384 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyClickingCancelButtonToGetListSlidersListPage</span>
-                <span class="method-start">321767 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyClickingCancelButtonToGetListSlidersListPage status=SUCCESS method=ManageSlid...)</span>
-                <span class="method-start">329534 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageLocationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">330020 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addNewLocationToManageLocation</span>
-                <span class="method-start">351599 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=addNewLocationToManageLocation status=SUCCESS method=ManageLocationTest.addNewLocat...)</span>
-                <span class="method-start">370181 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">370729 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">resetInManageLocation</span>
-                <span class="method-start">378919 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=resetInManageLocation status=SUCCESS method=ManageLocationTest.resetInManageLocatio...)</span>
-                <span class="method-start">383516 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">384072 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">cancelInManageLocation</span>
-                <span class="method-start">397977 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=cancelInManageLocation status=SUCCESS method=ManageLocationTest.cancelInManageLocat...)</span>
-                <span class="method-start">407212 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">407911 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchFromListLocationTableToFindLocation</span>
-                <span class="method-start">416480 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=searchFromListLocationTableToFindLocation status=SUCCESS method=ManageLocationTest....)</span>
-                <span class="method-start">421701 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyAlertMessageIsDisplayedWhenPushNotificationIsSend_ByEnteringTitleAndDescripti...)</span>
+                <span class="method-start">104314 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManagePagesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">422191 ms</span>
+                <span class="method-start">105798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickResetButtonToGetListPagesTablePage(Papaw)</span>
-                <span class="method-start">429709 ms</span>
+                <span class="method-name">verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated(kite, color)</span>
+                <span class="method-start">111228 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=clickResetButtonToGetListPagesTablePage status=SUCCESS method=ManagePagesTest.click...)</span>
-                <span class="method-start">435324 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayed_WhenUpdateButtonIsClickedAfterEnteringTheTitleToBeUpdated st...)</span>
+                <span class="method-start">115135 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">435792 ms</span>
+                <span class="method-start">116163 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchPageUsingTitleFromListPageTable(Papaw)</span>
-                <span class="method-start">456462 ms</span>
+                <span class="method-name">verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndEnteringTitleOfPage(Papaw)</span>
+                <span class="method-start">121996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=searchPageUsingTitleFromListPageTable status=SUCCESS method=ManagePagesTest.searchP...)</span>
-                <span class="method-start">463637 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyCorrespondingPageTitleFromListPagesTableIsDisplayedByClickingSearchButtonAndE...)</span>
+                <span class="method-start">125657 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">464371 ms</span>
+                <span class="method-start">128080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateListPageAfterSearchingFromListPageTable(kite, color)</span>
-                <span class="method-start">471162 ms</span>
+                <span class="method-name">verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingNewButton</span>
+                <span class="method-start">134865 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=updateListPageAfterSearchingFromListPageTable status=SUCCESS method=ManagePagesTest...)</span>
-                <span class="method-start">477267 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyDuplicatePageAlertIsDisplayed_WhenExistingPageDetailsAreEnteredAfterClickingN...)</span>
+                <span class="method-start">140907 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">477782 ms</span>
+                <span class="method-start">141958 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyDuplicatePageCreation</span>
-                <span class="method-start">487446 ms</span>
+                <span class="method-name">verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton(Papaw)</span>
+                <span class="method-start">147792 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyDuplicatePageCreation status=SUCCESS method=ManagePagesTest.verifyDuplicatePa...)</span>
-                <span class="method-start">491977 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToViewListPageByClickingSearchAndEnteringTitle_andClickResetButton ...)</span>
+                <span class="method-start">150779 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManagePaymentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">152083 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingValueAndClickUpdateButton</span>
+                <span class="method-start">158592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayedWhenDebitAmountIsUpdated_ByClickingDebitUpdateButtonChangingV...)</span>
+                <span class="method-start">164599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">165835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable</span>
+                <span class="method-start">171943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayedWhenStatusIsChanged_ByClickingStatusButtonOfDebitInTable stat...)</span>
+                <span class="method-start">176978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">178784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingValueAndclickingReset</span>
+                <span class="method-start">184738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsRedirectToManagePaymentMethodsPage_ByClickingDebitUpdateButtonChangingV...)</span>
+                <span class="method-start">190031 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initilizeBrowser(chrome)</span>
-                <span class="method-start">492361 ms</span>
+                <span class="method-start">191485 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCancelButtonWorking</span>
-                <span class="method-start">497051 ms</span>
+                <span class="method-name">verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName</span>
+                <span class="method-start">198375 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyCancelButtonWorking status=SUCCESS method=ManageDeliveryBoyTest.verifyCancelB...)</span>
-                <span class="method-start">503618 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDelive...)</span>
+                <span class="method-start">203621 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">205174 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails</span>
+                <span class="method-start">211679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoy...)</span>
+                <span class="method-start">217764 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">219477 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableWithRequiredDetails</span>
+                <span class="method-start">225053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAleryIsDisplayedWhenNewButtonIsClickedToAddLocationInManageLocationListTableW...)</span>
+                <span class="method-start">231483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">232927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetails</span>
+                <span class="method-start">238844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyListLocationPagesIsDisplayedWhenResetButtonIsClickedAfterEnteringSearchDetail...)</span>
+                <span class="method-start">244865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">246093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetails</span>
+                <span class="method-start">252497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyListLocationPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringSearchDetail...)</span>
+                <span class="method-start">259482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">260401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredDetails</span>
+                <span class="method-start">265996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifySearchedLocationIsFoundInListLocationTableWhenLocationIsSearchedWithRequiredD...)</span>
+                <span class="method-start">270657 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">271872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage</span>
+                <span class="method-start">278906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyCopyRightMessageDisplayedAsFooterInHomePageByGettingFooterMessage status=SUCC...)</span>
+                <span class="method-start">280812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">282275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText</span>
+                <span class="method-start">289464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifySiteNameDisplayedInHomePageIsSameAsExpectedByGettingSiteNameText status=SUCCE...)</span>
+                <span class="method-start">291922 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">293064 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword(admin, admin)</span>
+                <span class="method-start">300247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyHomepageIsDisplayedAfterClickingSiginButtonWithValidUsernameAndValidPassword ...)</span>
+                <span class="method-start">302463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">304060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage</span>
+                <span class="method-start">312669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLogInPageIsDisplayedAfterClickingLogoutButtonFromHomePage status=SUCCESS meth...)</span>
+                <span class="method-start">316847 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">318423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInSearchBox</span>
+                <span class="method-start">325181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyListCategoryPageIsDisplayedWhenResetButtonIsClickedAfterEntering_aCategoryInS...)</span>
+                <span class="method-start">329742 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">330783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</span>
+                <span class="method-start">338569 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCatego...)</span>
+                <span class="method-start">353329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">356194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCategoryInSearchBox</span>
+                <span class="method-start">399832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToFindSearchedCategoryItemInListCategoryTableAfterSearching_aCatego...)</span>
+                <span class="method-start">411815 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevenrmartSupermarket.Testscripts.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">412805 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox(TRYNEW20)</span>
+                <span class="method-start">419328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDispalyedWhenResetButtonIsClickedAfterEnteringOffercodeInSearchBox sta...)</span>
+                <span class="method-start">423778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">424785 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage</span>
+                <span class="method-start">430248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayedOnEnteringOffercodeAndUpdatingOffercodeImage status=SUCCESS m...)</span>
+                <span class="method-start">437192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">438171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails</span>
+                <span class="method-start">448369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAlertIsDisplayedUponAddingNewOfferCodeWithRequiredDetails status=SUCCESS meth...)</span>
+                <span class="method-start">457933 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initilizeBrowser(chrome)</span>
+                <span class="method-start">459589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox(TRYNEW20)</span>
+                <span class="method-start">466026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifySearchedOfferCodeIsFoundInListOffercodeTableByEnteringtheOffercodeInSearchBox...)</span>
+                <span class="method-start">471671 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

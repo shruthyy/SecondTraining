@@ -9,6 +9,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageSliderPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
 	public ManageSliderPage(WebDriver driver) {
 	this.driver=driver;
@@ -29,64 +30,64 @@ public class ManageSliderPage {
 	@FindBy(xpath="//input[@id='main_img']") WebElement chooseFileImage;
 	@FindBy(xpath="//a[@type='button']") WebElement cancelButton;
 	@FindBy(xpath="//div[@class='container-fluid']") WebElement listSliderPageDisplayedAfterCancelling;
+	
 	public ManageSliderPage  uploadImageToAddSlider() {
 		chooseFileImage.sendKeys("C:\\Users\\PROJECTS\\OneDrive\\Desktop\\firstcryImg.jpg");
 		chooseFileImage.submit();
 		return this;
 	}
 	public String toGetBackgroundColourOfNewButton() {
-		return (PageUtility.getCssValue(newButton));
+		return pageutility.getCssValue(newButton);
 	}
 	public ManageSliderPage clickCancelButton() {
 		WaitUtility.waitForClickableByWebElement(driver, cancelButton);
-		PageUtility.clickOnElement(cancelButton);
+		pageutility.clickOnElement(cancelButton);
 		return this;
 	}
 	public void clickDelete() {
 		WaitUtility.waitForClickableByWebElement(driver, deleteButton);
-	    PageUtility.clickOnElement(deleteButton);
+		pageutility.clickOnElement(deleteButton);
 	}
 	public ManageSliderPage clickNewButton(){
 		WaitUtility.waitForClickableByWebElement(driver, newButton);
-		PageUtility.clickOnElement(newButton);
+		pageutility.clickOnElement(newButton);
 		return this;
 	}
 	public ManageSliderPage enterLinkToLinkTextBox(String newlink) {
 		WaitUtility.waitForClickableByWebElement(driver, link);
-		PageUtility.enterText(link, newlink);
+		pageutility.enterText(link, newlink);
 		return this;
 	}
 	public ManageSliderPage clickSaveButton() {
 		WaitUtility.waitForClickableByWebElement(driver, saveButton);
-		PageUtility.clickOnElement(saveButton);
+		pageutility.clickOnElement(saveButton);
 		return null;
 	}
-
 	public boolean listSliderPageisDisplayed() {
-		return PageUtility.isDisplay(listSlidersText);
+		return pageutility.isDisplay(listSlidersText);
 	}
 	public boolean isListSliderPageDisplayedAfterClickingCancelButton() {
-		return PageUtility.isDisplay(listSliderPageDisplayedAfterCancelling);
+		return pageutility.isDisplay(listSliderPageDisplayedAfterCancelling);
 	}
 	public boolean alertisDisplayed() {
-		return PageUtility.isDisplay(alert);
+		return pageutility.isDisplay(alert);
 	}
 	public boolean alertStatusChangeisDisplayed() {
-		return PageUtility.isDisplay(statusChangedSuccessfullyAlert);
+		return pageutility.isDisplay(statusChangedSuccessfullyAlert);
 	}
 	public void clickStatusButton() {
 		WaitUtility.waitForClickableByWebElement(driver, statusButton);
-		PageUtility.clickOnElement(statusButton);
+		pageutility.clickOnElement(statusButton);
 	}
 	public void clickHomeButtonFromListSliderPage() {
 		WaitUtility.waitForClickableByWebElement(driver, homeButtonInListSliderPage);
-		PageUtility.clickOnElement(homeButtonInListSliderPage);
+		pageutility.clickOnElement(homeButtonInListSliderPage);
 	}
 	public boolean isHomePageDisplayedAfterClickingHomeButton() {
-		return PageUtility.isDisplay(homeButtonInListSliderPage);
+		return pageutility.isDisplay(homeButtonInListSliderPage);
 	}
 	public boolean isDeleteAlertDisplayed() {
-		return PageUtility.isDisplay(alertShownAfterDelete);
+		return pageutility.isDisplay(alertShownAfterDelete);
 	}
 }
 

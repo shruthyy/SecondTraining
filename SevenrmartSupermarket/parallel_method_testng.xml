@@ -4,16 +4,15 @@
 	<listeners>
 		<listener class-name="sevenrmartSupermarket.Testscripts.Listeners" />
 	</listeners>
-		
-  <test thread-count="5" name="Test">
-	  <parameter name="browser" value="chrome"></parameter>
-    <classes>
-      <class name="sevenrmartSupermarket.Testscripts.ManageSliderTest">
-		  <methods>
-			  <include name="addLinkToManageSlider"/>
-			  <include name="verifyListSliderPageOpens"/>
-		  </methods>
-      </class>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="sevenrmartSupermarket.Testscripts.ManageSliderTest">
+				<methods>
+					<include name="verifyAlertIsDisplayedByClickingNewButtonAndAddingLink_ClickChooseFileAndSaveToUploadImageInSlider" />
+					<include name="veriftHomePageIsDisplayed_ByClickingHomeButtonFromListSliderPage" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

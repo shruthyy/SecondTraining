@@ -1,16 +1,11 @@
 package sevenrmartSupermarket.Testscripts;
 
-
-
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import Utilities.ExcelUtility;
+import Utilities.GeneralUtility;
+import retry.Retry;
 import sevenrmartSupermarket.Pages.LoginPage;
 import sevenrmartSupermarket.Pages.ManageDeliveryBoyPage;
 import sevenrmartSupermarket.Pages.SelectCategoryPage;
@@ -21,14 +16,14 @@ public class ManageDeliveryBoyTest extends Base {
 	ManageDeliveryBoyPage managedeliveryboypage;
 	
 	@Test(retryAnalyzer =Retry.class)
-	public void addNewDeliveryBoyDetails() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String input=ExcelUtility.getString(0,0, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-   	    String name=ExcelUtility.getString(0,1, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-   	    String passwordnew=ExcelUtility.getString(1,0, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-   	    String username=ExcelUtility.getString(0,3, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-   	    String deliveryboynew=ExcelUtility.getString(2,0, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
+	public void verifyNewDeliveryBoyDetailsAreFoundInListDeliveryBoyTable_AfterAddingNewDeliveryBoyWithRequiredDetails() throws IOException {
+		String userName=ExcelUtility.getString(0,0,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String password=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String input=ExcelUtility.getString(0,0, GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
+   	    String name=ExcelUtility.getString(0,1, GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
+   	    String passwordnew=ExcelUtility.getString(1,0, GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
+   	    String username=ExcelUtility.getString(0,3,GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
+   	    String deliveryboynew=ExcelUtility.getString(2,0,GeneralUtility.TESTDATAFILE,"ManageDeliveryBoy");
    	    loginpage=new LoginPage(driver);
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		selectcategorypage=new SelectCategoryPage(driver);
@@ -39,11 +34,11 @@ public class ManageDeliveryBoyTest extends Base {
 		assertTrue(managedeliveryboypage.searchInTheTable(deliveryboynew),"New Delivery Boy Details are not added successfully");	
 	}
 	@Test(retryAnalyzer =Retry.class)
-	public void verifyCancelButtonWorking() throws IOException {
-		String userName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String password=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"LoginPage");
-   	    String input=ExcelUtility.getString(0,0, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
-   	    String name=ExcelUtility.getString(0,1, System.getProperty("user.dir") +constants.Constants.TESTDATAFILE, "ManageDeliveryBoy");
+	public void verifyListDeliveryBoyPageIsDisplayedWhenCancelButtonIsClickedAfterEnteringNewDeliveryBoyName() throws IOException {
+		String userName=ExcelUtility.getString(0,0,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String password=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE,"LoginPage");
+   	    String input=ExcelUtility.getString(0,0,GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
+   	    String name=ExcelUtility.getString(0,1,GeneralUtility.TESTDATAFILE, "ManageDeliveryBoy");
    	    loginpage=new LoginPage(driver);
 		loginpage.enterUserName(userName).enterPassword(password).clickSignInButton();
 		selectcategorypage=new SelectCategoryPage(driver);
@@ -51,7 +46,6 @@ public class ManageDeliveryBoyTest extends Base {
 		managedeliveryboypage=new ManageDeliveryBoyPage(driver);
 		managedeliveryboypage.clickNewButtonToAddDeliveryBoy().enterNameToAddNewDeliveryBoy(name);
 		managedeliveryboypage.clickCancelButton();
-		assertTrue(managedeliveryboypage.isListDeliveryBoyPagDisplayedAfterCancel(),"Cancel button is not working");	
+		assertTrue(managedeliveryboypage.isListDeliveryBoyPagDisplayedAfterCancel(),"List deliveryboy page not displayed after cancelling");	
 	}
-
 }

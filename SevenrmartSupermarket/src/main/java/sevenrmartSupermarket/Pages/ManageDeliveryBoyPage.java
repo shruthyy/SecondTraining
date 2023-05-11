@@ -12,6 +12,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageDeliveryBoyPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
 	public ManageDeliveryBoyPage(WebDriver driver) {
 	this.driver=driver;
@@ -33,50 +34,47 @@ public class ManageDeliveryBoyPage {
     
     public ManageDeliveryBoyPage clickNewButtonToAddDeliveryBoy() {
     	WaitUtility.waitForClickableByWebElement(driver, newButtonToAddDeliveryBoy);
-		PageUtility.clickOnElement(newButtonToAddDeliveryBoy);
+    	pageutility.clickOnElement(newButtonToAddDeliveryBoy);
 		return this;
 	}
 	public ManageDeliveryBoyPage enterNameToAddNewDeliveryBoy(String name) {
 		WaitUtility.waitForElement(driver, enterNameTextBox);
-		PageUtility.enterText(enterNameTextBox, name);
+		pageutility.enterText(enterNameTextBox, name);
 		return this;
 	}
 	public ManageDeliveryBoyPage enterPasswordToAddNewDeliveryBoy(String passwordnew) {
-		PageUtility.enterText(enterPasswordTextBox, passwordnew);
+		WaitUtility.waitForElement(driver, enterPasswordTextBox);
+		pageutility.enterText(enterPasswordTextBox, passwordnew);
 		return this;
 	}
 	public ManageDeliveryBoyPage enterUsernameToAddNewDeliveryBoy(String username) {
 		WaitUtility.waitForElement(driver,enterUsernameTextBox);
-		PageUtility.enterText(enterUsernameTextBox, username);
+		pageutility.enterText(enterUsernameTextBox, username);
 		return this;
 	}
 	public void clickSaveButtonToAddDeliveryBoy() {
 		WaitUtility.waitForClickableByWebElement(driver, saveButtonToAddDeliveryBoy);
-		PageUtility.submit(saveButtonToAddDeliveryBoy);	
+		pageutility.submit(saveButtonToAddDeliveryBoy);	
 	}
 	public void isSearchWithPhoneNumberResultDisplayed() {
 		WaitUtility.waitForElement(driver, searchWithPhoneResult);
-		PageUtility.isDisplay(searchWithPhoneResult);
+		pageutility.isDisplay(searchWithPhoneResult);
 	}
 	public void clickRedSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver, redSearchButton);
-		PageUtility.clickOnElement(redSearchButton);
+		pageutility.clickOnElement(redSearchButton);
 	}
 	public void clickCancelButton() {
 		WaitUtility.waitForClickableByWebElement(driver, cancelButton);
-		PageUtility.submit(cancelButton);
+		pageutility.submit(cancelButton);
 	}
 	public void clickSearchButton() {
 		WaitUtility.waitForClickableByWebElement(driver,searchButton );
-		PageUtility.clickOnElement(searchButton);
-	}
-	public void enterPhNumbToTextBox(String phone) {
-		PageUtility.enterText(phNumTextBox, phone);
+		pageutility.clickOnElement(searchButton);
 	}
 	public boolean isListDeliveryBoyPagDisplayedAfterCancel() {
-		return PageUtility.isDisplay(listDeliveryBoyPageAfterCancel);
+		return pageutility.isDisplay(listDeliveryBoyPageAfterCancel);
 	}
-	
 	public boolean searchInTheTable(String deliveryboynew) {
 		String offercodeText="";
 		List<WebElement> columnElements=driver.findElements(TableValuesBy);
@@ -87,9 +85,7 @@ public class ManageDeliveryBoyPage {
 		if(offercodeText.equalsIgnoreCase(deliveryboynew))
 			return true;
 		else 
-
 			return false;
-
 		}		
 	public boolean searchByPhoneNumber(String phone ) {
 		String phoneText="";
@@ -103,5 +99,4 @@ public class ManageDeliveryBoyPage {
 		else 
 			return false;
 		}		
-
 }

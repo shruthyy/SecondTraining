@@ -4,18 +4,16 @@
 	<listeners>
 		<listener class-name="sevenrmartSupermarket.Testscripts.Listeners" />
 	</listeners>
-	
-   <test thread-count="5" name="Test">
-   <parameter name="browser" value="chrome"/> 
-    <classes>
-       <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
-      </classes>
-    </test> <!-- Test -->
-  
-  <test thread-count="5" name="TestEdge">
-  <parameter name="browser" value="edge"/> 
-    <classes>
-       <class name="sevenrmartSupermarket.Testscripts.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="sevenrmartSupermarket.Testscripts.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TestEdge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="sevenrmartSupermarket.Testscripts.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

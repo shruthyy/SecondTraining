@@ -9,6 +9,7 @@ import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManagePaymentPage {
+	PageUtility pageutility=new PageUtility();
 	public WebDriver driver;
 	public ManagePaymentPage(WebDriver driver) {
 	this.driver=driver;
@@ -24,35 +25,35 @@ public class ManagePaymentPage {
 	@FindBy(xpath="//div[@class='content-header']") WebElement afterResetPage;
 	public ManagePaymentPage clickDebitUpdateButton() {
 		WaitUtility.waitForClickableByWebElement(driver, debitUpdateButton);
-		PageUtility.clickOnElement(debitUpdateButton);
+		pageutility.clickOnElement(debitUpdateButton);
 		return this;
 	}
 	public ManagePaymentPage changeValueInDebitPayLimitTextBox(String amount) {
 		WaitUtility.waitForElement(driver, debitPayLimitTextBox);
-		PageUtility.enterText(debitPayLimitTextBox, amount);
+		pageutility.enterText(debitPayLimitTextBox, amount);
 		return this;
 	}
 	public ManagePaymentPage clickUpdate() {
 		WaitUtility.waitForClickableByWebElement(driver, updateButton);
-		PageUtility.clickOnElement(updateButton);
+		pageutility.clickOnElement(updateButton);
 		return this;
 	}
 	public boolean isAlertShownWhenUpdationIsDone() {
-		return PageUtility.isDisplay(alertWhenUpdateIsDone);
+		return pageutility.isDisplay(alertWhenUpdateIsDone);
 	}
 	public void clickDebitStatusButton() {
 		WaitUtility.waitForClickableByWebElement(driver, debitStatusButton);
-		PageUtility.clickOnElement(debitStatusButton);
+		pageutility.clickOnElement(debitStatusButton);
 	}
 	public ManagePaymentPage clickResetButton() {
 		WaitUtility.waitForClickableByWebElement(driver, resetButton);
-		PageUtility.clickOnElement(resetButton);
+		pageutility.clickOnElement(resetButton);
 		return this;
 	}
 	public boolean isAlertShownWhenStatusIsChanged() {
-		return PageUtility.isDisplay(alertWhenStatusIsChanged);
+		return pageutility.isDisplay(alertWhenStatusIsChanged);
 	}
 	public boolean isBackPageShownAfterClickingReset() {
-		return PageUtility.isDisplay(afterResetPage);
+		return pageutility.isDisplay(afterResetPage);
 	}
 }
